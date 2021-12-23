@@ -1,0 +1,624 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Le tube du poker en ligne - </title>
+
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+	<script type='text/javascript' src='http://www.poker5.tv/thumbs.js'></script></script>
+
+<script language="javascript1.3" src="javascripts/ahah.js" ></script>
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+
+
+.flottante {
+background-color: #6fa797;
+margin: 2px;
+float: left;
+width: 131px;
+height: 20px;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+
+.flottante a{
+
+font-size:15px; 
+color:#ffffff;
+font-weight: bold;
+text-decoration:none;
+}
+.flottante a:hover{
+background-color:407163 ;
+text-decoration:underline;
+}
+
+.bas {
+
+margin: 2px;
+float: left;
+width: 100%;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+.menu {
+width: 100%;
+}
+.spacer {
+clear: both;
+}
+
+
+#Layer1 {
+	position:absolute;
+	width:230px;
+	height:42px;
+	z-index:1;
+	left: 618px;
+	top: 41px;}
+
+
+#Layer2 {
+	position:absolute;
+	width:120px;
+	height:600px;
+	z-index:1;
+	left: 826px;
+	top: 79px;
+}
+
+
+
+
+
+
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font:normal 13px Arial;
+line-height:18px;
+z-index:100;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+color:#FFFFFF;
+border-bottom: 1px solid black;
+padding: 1px 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #182322;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="http://www.poker5.tv/seemore.php?load=bestnote">Les mieux notées</a>'
+menu1[1]='<a href="http://www.poker5.tv/seemore.php?load=viewed">Les plus vues</a>'
+menu1[2]='<a href="http://www.poker5.tv/seemore.php?load=featured">Les plus longues</a>'
+menu1[3]='<a href="http://www.poker5.tv/seemore.php?page=1&load=recent">Les plus récentes</a>'
+menu1[4]='<a href="http://www.poker5.tv/seemore.php?load=alpha">De A à Z</a>'
+
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='#6fa797'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+</head>
+<script type="text/javascript" src="swfobject.js"></script>
+<body>
+<div id="conteneur">
+  <a href="index.php"><img src="../images/poker5.jpg" alt="le poker en vidéo" border="0"></a>
+  
+
+  
+  <div id="Layer1"> 
+    <form method="POST" action="search.php">
+      
+              <input name="keyword" type="text" class="query" onFocus="if (this.value=='Vos mots clés'){this.value=''}" onBlur="if(this.value==''){this.value='Vos mots clés'}" value="Vos mots clés" size="20">
+              
+              <input type="hidden" name="type" value="videos" />
+              <input type="submit" value="GO!" name="B2"  >      
+  </form></div>
+  <div class="menu">
+<p class="flottante"><a href="index.php">Videos</a></p>
+<p class="flottante"><a href="seemore.php?load=viewed" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '150px')" onMouseout="delayhidemenu()">Les meilleures</a></p>
+<p class="flottante"><a href="category.php">Cat&eacute;gories</a></p>
+<p class="flottante"><a href="groups.php">Groupes</a></p>
+<p class="flottante"><a href="login.php">Inscription</a></p>
+<p class="flottante"><a href="myaccount.php"></a> <a href="login.php">
+          Connexion
+          </a></p>
+</div>
+
+ 
+
+<div>
+
+            
+
+
+
+</div>
+
+
+
+
+
+  <table border="0" width="100%" id="table29" style="border-style:solid; border-width:1px; " class="warning_box_green">
+    
+  </table>
+	<table border="0" width="100%" id="table30" style="border-style:solid; "  class="warning_box_green_white">
+      
+    </table>
+	<table border="0" width="100%" id="table31" class="warning_box_red">
+      
+    </table>
+	<span class="categories">R&eacute;sultats de la recherche pour :&quot;Vegas&quot;</span>
+	
+	<p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/Dt4ISkh3nJkcwRfW0qia.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['Dt4ISkh3nJkcwRfW0qia']=0; pic['Dt4ISkh3nJkcwRfW0qia']=new Array(); pics['Dt4ISkh3nJkcwRfW0qia']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-22-Las-Vegas-7-juillet-2007'> <img id='Dt4ISkh3nJkcwRfW0qia' class=t width=180 height=130 src='uploads/thumbs/Dt4ISkh3nJkcwRfW0qia.jpg'
+onmouseout='endm("Dt4ISkh3nJkcwRfW0qia"); this.src="uploads/thumbs/Dt4ISkh3nJkcwRfW0qia.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("Dt4ISkh3nJkcwRfW0qia","uploads/thumbs/Dt4ISkh3nJkcwRfW0qia.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-22-Las-Vegas-7-juillet-2007">
+                Las Vegas 7 juillet 2007
+                </a></p>
+<p class="infos">C'est un reportage fait à Las Vegas au jour de l'événement principal de WSOP. Pour voir les stars, Matt Damon, Patrick Bruel, Brad Pitt ou George Clooney il fallait payer une somme d'entrée dans le tournoi de 6000$.</p>
+			
+<p class="infos">TAGS: WSOP</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">1290 vues, 0.00
+                / 5, 00:02:10</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/eYdV4YzGP5xDSSCuPQ0P.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['eYdV4YzGP5xDSSCuPQ0P']=0; pic['eYdV4YzGP5xDSSCuPQ0P']=new Array(); pics['eYdV4YzGP5xDSSCuPQ0P']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-109-WPT----1ere-partie'> <img id='eYdV4YzGP5xDSSCuPQ0P' class=t width=180 height=130 src='uploads/thumbs/eYdV4YzGP5xDSSCuPQ0P.jpg'
+onmouseout='endm("eYdV4YzGP5xDSSCuPQ0P"); this.src="uploads/thumbs/eYdV4YzGP5xDSSCuPQ0P.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("eYdV4YzGP5xDSSCuPQ0P","uploads/thumbs/eYdV4YzGP5xDSSCuPQ0P.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-109-WPT----1ere-partie">
+                WPT  - 1ère partie
+                </a></p>
+<p class="infos">Le WPT se déroule au casino The Bicycle de Las Vegas. 309 joueurs ont payé 5000$ pour y entrer et disputer une cagnotte totale de 1,5 millions de dollars. La table présentée dans cette vidéo est composée de: Chip Jett, deux fois finaliste WPT, Mel Judah d'Australie, Farzad Bonyadi, Phil Laak d'Ecosse, T.J. Cloutier, le joueur qui a eu les plus nombreuses victoires de l'histoire des tournois et finalement, Paul Phillips.</p>
+			
+<p class="infos">TAGS: WPT, Las Vegas</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">860 vues, 0.00
+                / 5, 00:18:19</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/GhUhtA0OKGEWcslZxMJW.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['GhUhtA0OKGEWcslZxMJW']=0; pic['GhUhtA0OKGEWcslZxMJW']=new Array(); pics['GhUhtA0OKGEWcslZxMJW']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-134-Trucs-et-astuces-avec-Peter-Eastgate'> <img id='GhUhtA0OKGEWcslZxMJW' class=t width=180 height=130 src='uploads/thumbs/GhUhtA0OKGEWcslZxMJW.jpg'
+onmouseout='endm("GhUhtA0OKGEWcslZxMJW"); this.src="uploads/thumbs/GhUhtA0OKGEWcslZxMJW.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("GhUhtA0OKGEWcslZxMJW","uploads/thumbs/GhUhtA0OKGEWcslZxMJW.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-134-Trucs-et-astuces-avec-Peter-Eastgate">
+                Trucs et astuces avec Peter Eastgate
+                </a></p>
+<p class="infos">Aux WSOP Las Vegas 2008, Peter Eastgate vous donne des conseils pour se qualifier plus facilement à la table finale d'un grand tournoi. Voilà son premier conseil:<br />
+<br />
+1. S'auto-évaluer, être patient et accumuler des jetons en permanence.<br />
+<br />
+Pour le deuxième conseil, suivez la prochaine vidéo!</p>
+			
+<p class="infos">TAGS: WSOP, Las Vegas, Peter Eastgate</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Trucs, astuces">
+                  Trucs, astuces
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">743 vues, 0.00
+                / 5, 00:02:17</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/bGg1VgmwrrRXoIuPwIwB.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['bGg1VgmwrrRXoIuPwIwB']=0; pic['bGg1VgmwrrRXoIuPwIwB']=new Array(); pics['bGg1VgmwrrRXoIuPwIwB']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-9-Trailer-du-jeu-«-High-Stakes-Vegas-Strip--Poker-Edition-»'> <img id='bGg1VgmwrrRXoIuPwIwB' class=t width=180 height=130 src='uploads/thumbs/bGg1VgmwrrRXoIuPwIwB.jpg'
+onmouseout='endm("bGg1VgmwrrRXoIuPwIwB"); this.src="uploads/thumbs/bGg1VgmwrrRXoIuPwIwB.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("bGg1VgmwrrRXoIuPwIwB","uploads/thumbs/bGg1VgmwrrRXoIuPwIwB.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-9-Trailer-du-jeu-«-High-Stakes-Vegas-Strip--Poker-Edition-»">
+                Trailer du jeu « High Stakes Vegas Strip : Po...
+                </a></p>
+<p class="infos">Video de presentation du jeu PS3 &quot;High Stakes Vegas Strip : Poker Edition »</p>
+			
+<p class="infos">TAGS: High Stakes Vegas Strip poker edition jeux video PS3 trailer</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Jeux vidéo">
+                  Jeux vidéo
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">2136 vues, 0.00
+                / 5, 00:01:16</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/nSpruPYaExsT4vFBXipG.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['nSpruPYaExsT4vFBXipG']=0; pic['nSpruPYaExsT4vFBXipG']=new Array(); pics['nSpruPYaExsT4vFBXipG']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-80-WPT--Doyle-Brunson-Classic--Las-Vegas-decembre-2007'> <img id='nSpruPYaExsT4vFBXipG' class=t width=180 height=130 src='uploads/thumbs/nSpruPYaExsT4vFBXipG.jpg'
+onmouseout='endm("nSpruPYaExsT4vFBXipG"); this.src="uploads/thumbs/nSpruPYaExsT4vFBXipG.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("nSpruPYaExsT4vFBXipG","uploads/thumbs/nSpruPYaExsT4vFBXipG.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-80-WPT--Doyle-Brunson-Classic--Las-Vegas-decembre-2007">
+                WPT &quot;Doyle Brunson Classic&quot; Las Vegas décembr...
+                </a></p>
+<p class="infos">Le tournoi WPT &quot;Doyle Brunson Classic&quot; de Las Vegas a ramassé beaucoup de joueurs très connus, tels que David Benyamine, Patrick Bruel, Fabrice Soulier etc. Le grand prix s'est élevé à 2,105,000$!</p>
+			
+<p class="infos">TAGS: WPT &quot;Doyle Brunson Classic&quot;, David Benyamine, Patrick Bruel, Fabrice Soulier</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">1055 vues, 0.00
+                / 5, 00:03:31</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/QH4HIxDF0zwppiVp4qM0.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['QH4HIxDF0zwppiVp4qM0']=0; pic['QH4HIxDF0zwppiVp4qM0']=new Array(); pics['QH4HIxDF0zwppiVp4qM0']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-2-Le-coup-de-bluff-de-Varkonyi'> <img id='QH4HIxDF0zwppiVp4qM0' class=t width=180 height=130 src='uploads/thumbs/QH4HIxDF0zwppiVp4qM0.jpg'
+onmouseout='endm("QH4HIxDF0zwppiVp4qM0"); this.src="uploads/thumbs/QH4HIxDF0zwppiVp4qM0.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("QH4HIxDF0zwppiVp4qM0","uploads/thumbs/QH4HIxDF0zwppiVp4qM0.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-2-Le-coup-de-bluff-de-Varkonyi">
+                Le coup de bluff de Varkonyi
+                </a></p>
+<p class="infos">Le coup de bluff incroyable de Varkonyi au World Championships à Vegas</p>
+			
+<p class="infos">TAGS: Varkonyi vegas World Championships</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Coups de maîtres">
+                  Coups de maîtres
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">1159 vues, 0.00
+                / 5, 00:01:49</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/AjZaNYcmZhOfOMi3KJES.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['AjZaNYcmZhOfOMi3KJES']=0; pic['AjZaNYcmZhOfOMi3KJES']=new Array(); pics['AjZaNYcmZhOfOMi3KJES']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-208-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-1'> <img id='AjZaNYcmZhOfOMi3KJES' class=t width=180 height=130 src='uploads/thumbs/AjZaNYcmZhOfOMi3KJES.jpg'
+onmouseout='endm("AjZaNYcmZhOfOMi3KJES"); this.src="uploads/thumbs/AjZaNYcmZhOfOMi3KJES.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("AjZaNYcmZhOfOMi3KJES","uploads/thumbs/AjZaNYcmZhOfOMi3KJES.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-208-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-1">
+                WSOP 2009 - 40.000$ No-Limit Hold'em Champion...
+                </a></p>
+<p class="infos">Le plus grand tournoi de poker du monde a commencé ! 40 années d'histoire qui se caractérisent en quelques mots: argent, divertissement, passion, bracelets, Main Event et de nouveau argent.<br />
+<br />
+Les Séries Mondiales du Poker sont un spectacle du poker. Nous sommes de retour à Las Vegas, au Rio All-Suite Hotel &amp; Casino avec la 40ème édition. Les organisateurs ont voulu marquer ce chiffre et ont ajouté un événement spécial, qui a attiré beaucoup de stars du poker mondial. Il s'agit du tournoi 40.000$ No-Limit Hold'em Championship. Après 3 jours de compétition à la table finale sont restés 9 finalistes. Suivez toute la série des vidéos pour connaître le champion de ce tournoi anniversaire WSOP 2009.</p>
+			
+<p class="infos">TAGS: WSOP 2009, Las Vegas, Rio, No-Limit Hold'em</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">783 vues, 0.00
+                / 5, 00:07:39</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/tQwCqb5eaLMdi2UyREcj.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['tQwCqb5eaLMdi2UyREcj']=0; pic['tQwCqb5eaLMdi2UyREcj']=new Array(); pics['tQwCqb5eaLMdi2UyREcj']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-207-WSOP-2009---interviews-joueurs-Landbrokes'> <img id='tQwCqb5eaLMdi2UyREcj' class=t width=180 height=130 src='uploads/thumbs/tQwCqb5eaLMdi2UyREcj.jpg'
+onmouseout='endm("tQwCqb5eaLMdi2UyREcj"); this.src="uploads/thumbs/tQwCqb5eaLMdi2UyREcj.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("tQwCqb5eaLMdi2UyREcj","uploads/thumbs/tQwCqb5eaLMdi2UyREcj.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-207-WSOP-2009---interviews-joueurs-Landbrokes">
+                WSOP 2009 - interviews joueurs Landbrokes
+                </a></p>
+<p class="infos">Une brève présentation des coulisses des World Series of Poker 2009 de Las Vegas. On vous présente les casinos où se déroulent les événements et les interviews de quelques joueurs du Day 1 du Main Event, tels que Max Winberg, Steve Davis, Trevor Lawson, Raymond Masters, Andreas Hoivold, John Magill, Jonass Danielsson, Thomas Tyszkievicz, Michael Sterk. Ils font tous partie de l'équipe Landbrokes Poker Team.</p>
+			
+<p class="infos">TAGS: WSOP, Las Vegas, Winn, 2009, Max Winberg, Steve Davis, Trevor Lawson, Raymond Masters, Andreas Hoivold, John Magill, Jonass Danielsson, Thomas Tyszkievicz, Michael Sterk</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">510 vues, 0.00
+                / 5, 00:05:50</p>
+</div>
+
+<hr />
+
+
+</p>
+	<!-- Pagination start -->
+<div id="pagination">
+<ul>
+<li><a href="search.php?page=1&keyword=Vegas&type=videos">1</a></li><li><a href="search.php?page=2&keyword=Vegas&type=videos">2</a></li><li><a href="search.php?page=3&keyword=Vegas&type=videos">3</a></li><li><a href="search.php?page=4&keyword=Vegas&type=videos">4</a></li><li><a href="search.php?page=2&keyword=Vegas&type=videos">Suivant >></a></li>
+</ul>
+</div>
+<!-- Pagination end -->	
+
+
+
+  
+    <div class="bas">
+<p class="bas">support[at]poker5.tv - <strong>copyright 2007 poker5.tv</strong> - <a href="rss.php"><img src="../images/feed-icon-14x14.png" width="14" height="14" border="0" align="absbottom"><br>
+  <a href="http://www.poker5.tv/last_com.php">commentaires</a> | <a href="http://www.poker5.tv/videos_poker.php">liste des  vid&eacute;os</a>  | <a href="http://www.poker5.tv/tags.php">tags</a> | <a href="http://www.poker5.tv/stats.php">stats</a> <a href="http://www.xiti.com/xiti.asp?s=360442" title="WebAnalytics">
+<script type="text/javascript">
+<!--
+Xt_param = 's=360442&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="80" height="15" border="0" alt="" ';
+Xt_i += 'src="http://logv3.xiti.com/g.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="80" height="15" src="http://logv3.xiti.com/g.xiti?s=360442&p=" alt="WebAnalytics" />
+</noscript></a>
+</p>
+  </div>
+</div>
+
+
+<div id="Layer2">
+<iframe align="center" name="nl" scrolling="no" marginwidth="0" marginheight="0" height="600" width="120" border="0" frameborder="0" src="http://www.poker5.tv/pub120600.php" style="border:0px;"></iframe>
+<br>
+<span class="intro">Poker5.tv vous recommande les sites suivants:<br>
+<a href="http://fr.virtuacasinos.com/">jeux casino</a><br>
+<a href="http://www.mescasinos.org">casino</a><br>
+<a href="http://www.poker-fr.org">poker en ligne</a><br>
+<a href="http://www.casinos-hits.com">casino en ligne</a><br>
+<a href=http://www.pokerligne.org/ target="_blank">poker en ligne</a><br>
+<a href="http://www.jeux-de-casinos.com/free.php" >Casino gratuit</a><br>
+<a href="http://www.guide-poker.eu">Jouer au poker</a><br>
+<a href="http://www.onlinepokerinfo.fr">Poker</a><br>
+<a href="http://poker.comprendrechoisir.com/comprendre/combinaison" title="Poker combinaison" target="_blank">Poker combinaison</a><br>
+<a href="http://paris-sportifs.comprendrechoisir.com/" title="Pari sportif" target="_blank">Pari sportif</a>
+</span>
+
+</div>
+</body>
+
+</html><div style="margin-left:auto; margin-right:auto; width:200px; height:20px; border:#999999 1px solid; line-height:15px; text-align:center; padding-left:5px; padding-right:5px; margin-top:15px; visibility:visible; background-color:#FFFFFF; clear:both">
+<a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Powered by PHPmotion -</a> <a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Free Video Script</a></div>

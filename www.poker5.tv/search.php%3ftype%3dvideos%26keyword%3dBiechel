@@ -1,0 +1,464 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Le tube du poker en ligne - </title>
+
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+	<script type='text/javascript' src='http://www.poker5.tv/thumbs.js'></script></script>
+
+<script language="javascript1.3" src="javascripts/ahah.js" ></script>
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+
+
+.flottante {
+background-color: #6fa797;
+margin: 2px;
+float: left;
+width: 131px;
+height: 20px;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+
+.flottante a{
+
+font-size:15px; 
+color:#ffffff;
+font-weight: bold;
+text-decoration:none;
+}
+.flottante a:hover{
+background-color:407163 ;
+text-decoration:underline;
+}
+
+.bas {
+
+margin: 2px;
+float: left;
+width: 100%;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+.menu {
+width: 100%;
+}
+.spacer {
+clear: both;
+}
+
+
+#Layer1 {
+	position:absolute;
+	width:230px;
+	height:42px;
+	z-index:1;
+	left: 618px;
+	top: 41px;}
+
+
+#Layer2 {
+	position:absolute;
+	width:120px;
+	height:600px;
+	z-index:1;
+	left: 826px;
+	top: 79px;
+}
+
+
+
+
+
+
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font:normal 13px Arial;
+line-height:18px;
+z-index:100;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+color:#FFFFFF;
+border-bottom: 1px solid black;
+padding: 1px 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #182322;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="http://www.poker5.tv/seemore.php?load=bestnote">Les mieux notées</a>'
+menu1[1]='<a href="http://www.poker5.tv/seemore.php?load=viewed">Les plus vues</a>'
+menu1[2]='<a href="http://www.poker5.tv/seemore.php?load=featured">Les plus longues</a>'
+menu1[3]='<a href="http://www.poker5.tv/seemore.php?page=1&load=recent">Les plus récentes</a>'
+menu1[4]='<a href="http://www.poker5.tv/seemore.php?load=alpha">De A à Z</a>'
+
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='#6fa797'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+</head>
+<script type="text/javascript" src="swfobject.js"></script>
+<body>
+<div id="conteneur">
+  <a href="index.php"><img src="../images/poker5.jpg" alt="le poker en vidéo" border="0"></a>
+  
+
+  
+  <div id="Layer1"> 
+    <form method="POST" action="search.php">
+      
+              <input name="keyword" type="text" class="query" onFocus="if (this.value=='Vos mots clés'){this.value=''}" onBlur="if(this.value==''){this.value='Vos mots clés'}" value="Vos mots clés" size="20">
+              
+              <input type="hidden" name="type" value="videos" />
+              <input type="submit" value="GO!" name="B2"  >      
+  </form></div>
+  <div class="menu">
+<p class="flottante"><a href="index.php">Videos</a></p>
+<p class="flottante"><a href="seemore.php?load=viewed" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '150px')" onMouseout="delayhidemenu()">Les meilleures</a></p>
+<p class="flottante"><a href="category.php">Cat&eacute;gories</a></p>
+<p class="flottante"><a href="groups.php">Groupes</a></p>
+<p class="flottante"><a href="login.php">Inscription</a></p>
+<p class="flottante"><a href="myaccount.php"></a> <a href="login.php">
+          Connexion
+          </a></p>
+</div>
+
+ 
+
+<div>
+
+            
+
+
+
+</div>
+
+
+
+
+
+  <table border="0" width="100%" id="table29" style="border-style:solid; border-width:1px; " class="warning_box_green">
+    
+  </table>
+	<table border="0" width="100%" id="table30" style="border-style:solid; "  class="warning_box_green_white">
+      
+    </table>
+	<table border="0" width="100%" id="table31" class="warning_box_red">
+      
+    </table>
+	<span class="categories">R&eacute;sultats de la recherche pour :&quot;Biechel&quot;</span>
+	
+	<p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/EFxtLjRvq1HUpGepySPF.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['EFxtLjRvq1HUpGepySPF']=0; pic['EFxtLjRvq1HUpGepySPF']=new Array(); pics['EFxtLjRvq1HUpGepySPF']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-98-Portrait-de-Remy-Biechel'> <img id='EFxtLjRvq1HUpGepySPF' class=t width=180 height=130 src='uploads/thumbs/EFxtLjRvq1HUpGepySPF.jpg'
+onmouseout='endm("EFxtLjRvq1HUpGepySPF"); this.src="uploads/thumbs/EFxtLjRvq1HUpGepySPF.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("EFxtLjRvq1HUpGepySPF","uploads/thumbs/EFxtLjRvq1HUpGepySPF.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-98-Portrait-de-Remy-Biechel">
+                Portrait de Remy Biechel
+                </a></p>
+<p class="infos">Au Master Classics of poker d'Amsterdam on prend un interview à Remy Biechel. Voilà les questions posées et les réponses:&lt;br /&gt;<br />
+Impressions sur le tournoi - Remy Biechel dit qu'il n'a pas de regrets.&lt;br /&gt;<br />
+Où en es-tu dans ton parcours poker? - il répond qu'il a eu une très bonne année et qu'il a des objectifs plus grands pour l'année à venir.&lt;br /&gt;<br />
+Et Amsterdam, les spécialités locales...? - C'est extra cool...</p>
+			
+<p class="infos">TAGS: Amsterdam Master Classics, Remy Biechel</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">307 vues, 0.00
+                / 5, 00:03:53</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/CfSUnwlmhSDtAlLoZdax.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['CfSUnwlmhSDtAlLoZdax']=0; pic['CfSUnwlmhSDtAlLoZdax']=new Array(); pics['CfSUnwlmhSDtAlLoZdax']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-92-WSOP-2008---emission-6'> <img id='CfSUnwlmhSDtAlLoZdax' class=t width=180 height=130 src='uploads/thumbs/CfSUnwlmhSDtAlLoZdax.jpg'
+onmouseout='endm("CfSUnwlmhSDtAlLoZdax"); this.src="uploads/thumbs/CfSUnwlmhSDtAlLoZdax.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("CfSUnwlmhSDtAlLoZdax","uploads/thumbs/CfSUnwlmhSDtAlLoZdax.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-92-WSOP-2008---emission-6">
+                WSOP 2008 - émission 6
+                </a></p>
+<p class="infos">Sixième édition de MadeInPoker Inside WSOP 2008, en compagnie de Fabrice, Claire et Fab. Ils vous amènent les coulisses, les résultats, les tournois, deux ou trois anecdotes et un reportage avec un joueur français, Remy Biechel. L'interview avec l'invité de marque propose cette fois-ci Bertrand &quot;Elky&quot; Grospellier.</p>
+			
+<p class="infos">TAGS: WSOP, reportage, news, poker</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">403 vues, 0.00
+                / 5, 00:22:23</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/SqXojPHOvxNeJRiPlWaU.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['SqXojPHOvxNeJRiPlWaU']=0; pic['SqXojPHOvxNeJRiPlWaU']=new Array(); pics['SqXojPHOvxNeJRiPlWaU']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-170-PPT-Nice-2009---Part-1'> <img id='SqXojPHOvxNeJRiPlWaU' class=t width=180 height=130 src='uploads/thumbs/SqXojPHOvxNeJRiPlWaU.jpg'
+onmouseout='endm("SqXojPHOvxNeJRiPlWaU"); this.src="uploads/thumbs/SqXojPHOvxNeJRiPlWaU.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("SqXojPHOvxNeJRiPlWaU","uploads/thumbs/SqXojPHOvxNeJRiPlWaU.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-170-PPT-Nice-2009---Part-1">
+                PPT Nice 2009 - Part 1
+                </a></p>
+<p class="infos">431 joueurs ont participé au quatrième Super Satellite PPT 2009, organisé à l'Hôtel Casino Le Palais de la Méditerranée de Nice. De grands noms ont y été présents, tels que Arnaud Mattern, Ludovic Lacay, Davidi Kittai, Roger Hairabedian, Rém y Biechel, François Tardieu, Eric Haik, Jean-Philippe Rohr, Raymond Domenech, Estelle Denis, Alain Roy, Antonin Teisseire et Stéphane Bazin. Suivez aussi la continuation de cette vidéo, &quot;PPT Nice 2009 - Part 2&quot; pour découvrir le gagnant.</p>
+			
+<p class="infos">TAGS: Partouche Poker Tour 2008</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">74 vues, 0.00
+                / 5, 00:30:00</p>
+</div>
+
+<hr />
+
+
+</p>
+	<!-- Pagination start -->
+<div id="pagination">
+<ul>
+<li><a href="search.php?page=1&keyword=Biechel&type=videos">1</a></li>
+</ul>
+</div>
+<!-- Pagination end -->	
+
+
+
+  
+    <div class="bas">
+<p class="bas">support[at]poker5.tv - <strong>copyright 2007 poker5.tv</strong> - <a href="rss.php"><img src="../images/feed-icon-14x14.png" width="14" height="14" border="0" align="absbottom"><br>
+  <a href="http://www.poker5.tv/last_com.php">commentaires</a> | <a href="http://www.poker5.tv/videos_poker.php">liste des  vid&eacute;os</a>  | <a href="http://www.poker5.tv/tags.php">tags</a> | <a href="http://www.poker5.tv/stats.php">stats</a> <a href="http://www.xiti.com/xiti.asp?s=360442" title="WebAnalytics">
+<script type="text/javascript">
+<!--
+Xt_param = 's=360442&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="80" height="15" border="0" alt="" ';
+Xt_i += 'src="http://logv3.xiti.com/g.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="80" height="15" src="http://logv3.xiti.com/g.xiti?s=360442&p=" alt="WebAnalytics" />
+</noscript></a>
+</p>
+  </div>
+</div>
+
+
+<div id="Layer2">
+<iframe align="center" name="nl" scrolling="no" marginwidth="0" marginheight="0" height="600" width="120" border="0" frameborder="0" src="http://www.poker5.tv/pub120600.php" style="border:0px;"></iframe>
+<br>
+<span class="intro">Poker5.tv vous recommande les sites suivants:<br>
+<a href="http://www.mescasinos.org">casino</a><br>
+<a href="http://www.poker-fr.org">poker en ligne</a><br>
+<a href="http://www.casinos-hits.com">casino en ligne</a><br>
+<a href=http://www.pokerligne.org/ target="_blank">poker en ligne</a><br>
+<a href="http://www.jeux-de-casinos.com/free.php" >Casino gratuit</a><br>
+<a href="http://www.guide-poker.eu">Jouer au poker</a></span>
+
+</div>
+</body>
+
+</html><div align="center"><table border="0" cellpadding="0" cellspacing="0" width="183" id="table5"><tr><td>&nbsp;</td></tr><tr>
+	<td height="18" style="border: 1px solid #999999; " bgcolor="#FFFFFF"><p align="center">
+	<font face="Arial" color="#6B8FDA" style="font-size: 8pt">Powered free by </font>
+	<font face="Arial" color="#333333" style="font-size: 8pt"> <a href="http://www.phpmotion.com">
+	<font color="#6B8FDA">PHPmotion</font></a></font></td></tr></table></div>

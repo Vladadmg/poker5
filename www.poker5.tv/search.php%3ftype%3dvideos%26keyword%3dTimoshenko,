@@ -1,0 +1,636 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Le tube du poker en ligne - </title>
+
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+	<script type='text/javascript' src='http://www.poker5.tv/thumbs.js'></script></script>
+
+<script language="javascript1.3" src="javascripts/ahah.js" ></script>
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+
+
+.flottante {
+background-color: #6fa797;
+margin: 2px;
+float: left;
+width: 131px;
+height: 20px;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+
+.flottante a{
+
+font-size:15px; 
+color:#ffffff;
+font-weight: bold;
+text-decoration:none;
+}
+.flottante a:hover{
+background-color:407163 ;
+text-decoration:underline;
+}
+
+.bas {
+
+margin: 2px;
+float: left;
+width: 100%;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+.menu {
+width: 100%;
+}
+.spacer {
+clear: both;
+}
+
+
+#Layer1 {
+	position:absolute;
+	width:230px;
+	height:42px;
+	z-index:1;
+	left: 618px;
+	top: 41px;}
+
+
+#Layer2 {
+	position:absolute;
+	width:120px;
+	height:600px;
+	z-index:1;
+	left: 826px;
+	top: 79px;
+}
+
+
+
+
+
+
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font:normal 13px Arial;
+line-height:18px;
+z-index:100;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+color:#FFFFFF;
+border-bottom: 1px solid black;
+padding: 1px 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #182322;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="http://www.poker5.tv/seemore.php?load=bestnote">Les mieux notées</a>'
+menu1[1]='<a href="http://www.poker5.tv/seemore.php?load=viewed">Les plus vues</a>'
+menu1[2]='<a href="http://www.poker5.tv/seemore.php?load=featured">Les plus longues</a>'
+menu1[3]='<a href="http://www.poker5.tv/seemore.php?page=1&load=recent">Les plus récentes</a>'
+menu1[4]='<a href="http://www.poker5.tv/seemore.php?load=alpha">De A à Z</a>'
+
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='#6fa797'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+</head>
+<script type="text/javascript" src="swfobject.js"></script>
+<body>
+<div id="conteneur">
+  <a href="index.php"><img src="../images/poker5.jpg" alt="le poker en vidéo" border="0"></a>
+  
+
+  
+  <div id="Layer1"> 
+    <form method="POST" action="search.php">
+      
+              <input name="keyword" type="text" class="query" onFocus="if (this.value=='Vos mots clés'){this.value=''}" onBlur="if(this.value==''){this.value='Vos mots clés'}" value="Vos mots clés" size="20">
+              
+              <input type="hidden" name="type" value="videos" />
+              <input type="submit" value="GO!" name="B2"  >      
+  </form></div>
+  <div class="menu">
+<p class="flottante"><a href="index.php">Videos</a></p>
+<p class="flottante"><a href="seemore.php?load=viewed" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '150px')" onMouseout="delayhidemenu()">Les meilleures</a></p>
+<p class="flottante"><a href="category.php">Cat&eacute;gories</a></p>
+<p class="flottante"><a href="groups.php">Groupes</a></p>
+<p class="flottante"><a href="login.php">Inscription</a></p>
+<p class="flottante"><a href="myaccount.php"></a> <a href="login.php">
+          Connexion
+          </a></p>
+</div>
+
+ 
+
+<div>
+
+            
+
+
+
+</div>
+
+
+
+
+
+  <table border="0" width="100%" id="table29" style="border-style:solid; border-width:1px; " class="warning_box_green">
+    
+  </table>
+	<table border="0" width="100%" id="table30" style="border-style:solid; "  class="warning_box_green_white">
+      
+    </table>
+	<table border="0" width="100%" id="table31" class="warning_box_red">
+      
+    </table>
+	<span class="categories">R&eacute;sultats de la recherche pour :&quot;Timoshenko,&quot;</span>
+	
+	<p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/dKLa3DMkcVwx3TGsTrOR.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['dKLa3DMkcVwx3TGsTrOR']=0; pic['dKLa3DMkcVwx3TGsTrOR']=new Array(); pics['dKLa3DMkcVwx3TGsTrOR']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-192-WPT-World-Championship-2009---Part-8'> <img id='dKLa3DMkcVwx3TGsTrOR' class=t width=180 height=130 src='uploads/thumbs/dKLa3DMkcVwx3TGsTrOR.jpg'
+onmouseout='endm("dKLa3DMkcVwx3TGsTrOR"); this.src="uploads/thumbs/dKLa3DMkcVwx3TGsTrOR.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("dKLa3DMkcVwx3TGsTrOR","uploads/thumbs/dKLa3DMkcVwx3TGsTrOR.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-192-WPT-World-Championship-2009---Part-8">
+                WPT World Championship 2009 - Part 8
+                </a></p>
+<p class="infos">Yevgheny Timoshenko est le favori et au cours de cette table finale il n'a fait que ramasser les jetons. Voilà la dernière main du heads-up: Yevgheny Timoshenko reçoit A pique, 3 trèfle et Ran Azor Q trèfle, 10 carreau. Les cartes communes ont été 7 carreau, J pique, Q pique, K trèfle et le 10 pique venait de compléter la quinte gagnante de Timoshenko. Il devient ainsi le second plus jeune joueur à gagner l'Evénement WPT. Voilà ausii le classement final du WPT World Championship 2009:<br />
+<br />
+1. Yevgheny Timoshenko - 2.149.960$<br />
+2. Ran Azor - 1.446.265$<br />
+3. Bertrand &quot;Elky&quot; Grospellier - 776.245$<br />
+4. Christian Harder - 571.965$<br />
+5. Shannon Shorr - 408. 550$<br />
+6. Scotty Nguyen - 285.985$</p>
+			
+<p class="infos">TAGS: WPT, Yevgheny Timoshenko, Ran Azor, Las Vegas</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">511 vues, 0.00
+                / 5, 00:11:03</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/ql0SzykET2UT3CsIRbJW.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['ql0SzykET2UT3CsIRbJW']=0; pic['ql0SzykET2UT3CsIRbJW']=new Array(); pics['ql0SzykET2UT3CsIRbJW']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-191-WPT-World-Championship-2009---Part-7'> <img id='ql0SzykET2UT3CsIRbJW' class=t width=180 height=130 src='uploads/thumbs/ql0SzykET2UT3CsIRbJW.jpg'
+onmouseout='endm("ql0SzykET2UT3CsIRbJW"); this.src="uploads/thumbs/ql0SzykET2UT3CsIRbJW.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("ql0SzykET2UT3CsIRbJW","uploads/thumbs/ql0SzykET2UT3CsIRbJW.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-191-WPT-World-Championship-2009---Part-7">
+                WPT World Championship 2009 - Part 7
+                </a></p>
+<p class="infos">Et nous voilà devant le heads-up de la table finale WPT World Championship 2009. Le Russe Yevgheny Timoshenko et l'Israélien Ran Azor se confrontent pour le prix de 2,1 millions de dollars. Pour Yevgheny Timoshenko c'est la première participation au WPT et il joue déjà comme un champion. Seulement après quelques mains il réussit à diminuer le stack de Ran Azor. Suivez plusieurs mains intéressantes jouées d'une manière professionnelle par le joueur russe de 21 ans.</p>
+			
+<p class="infos">TAGS: WPT, Yevgheny Timoshenko, Ran Azor, Las Vegas</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">394 vues, 0.00
+                / 5, 00:11:03</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/zMFj1cdbZ31cWxdDsSWl.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['zMFj1cdbZ31cWxdDsSWl']=0; pic['zMFj1cdbZ31cWxdDsSWl']=new Array(); pics['zMFj1cdbZ31cWxdDsSWl']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-188-WPT-World-Championship-2009---Part-4'> <img id='zMFj1cdbZ31cWxdDsSWl' class=t width=180 height=130 src='uploads/thumbs/zMFj1cdbZ31cWxdDsSWl.jpg'
+onmouseout='endm("zMFj1cdbZ31cWxdDsSWl"); this.src="uploads/thumbs/zMFj1cdbZ31cWxdDsSWl.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("zMFj1cdbZ31cWxdDsSWl","uploads/thumbs/zMFj1cdbZ31cWxdDsSWl.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-188-WPT-World-Championship-2009---Part-4">
+                WPT World Championship 2009 - Part 4
+                </a></p>
+<p class="infos">Elky perd 3 mains consécutives et Yevgheny Timoshenko maintient sa position de chip leader. C'est une table équilibrée, où tous les 5 joueurs veulent remporter le titre WPT. Après plusieurs mains risquantes contre le Russe, Shannon Shorr est éliminé en 5ème place. Il gagne quand-même une belle somme de 408.550$. Il reste encore 4 joueurs dans la course pour le titre WPT 2009.</p>
+			
+<p class="infos">TAGS: WPT World Championship, Bertrand &quot;Elky&quot; Grospellier, Scotty Nguyen</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">477 vues, 0.00
+                / 5, 00:10:59</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/LXeS1eVhDHHvZpDxvdmn.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['LXeS1eVhDHHvZpDxvdmn']=0; pic['LXeS1eVhDHHvZpDxvdmn']=new Array(); pics['LXeS1eVhDHHvZpDxvdmn']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-186-WPT-World-Championship-2009---Part-2'> <img id='LXeS1eVhDHHvZpDxvdmn' class=t width=180 height=130 src='uploads/thumbs/LXeS1eVhDHHvZpDxvdmn.jpg'
+onmouseout='endm("LXeS1eVhDHHvZpDxvdmn"); this.src="uploads/thumbs/LXeS1eVhDHHvZpDxvdmn.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("LXeS1eVhDHHvZpDxvdmn","uploads/thumbs/LXeS1eVhDHHvZpDxvdmn.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-186-WPT-World-Championship-2009---Part-2">
+                WPT World Championship 2009 - Part 2
+                </a></p>
+<p class="infos">Shannon Shorr commence très bien la table finale, en doublant ses jetons. Timoshenko est le chip leader de la table. Scotty Nguyen affirme qu'il veut battre les 4 jeunes joueurs pour démontrer que l'expérience vaut de plus. Par contre, il est le premier à être éliminé. Il gagne 285.985$ et finit en 6ème place. Après le déroulement de la partie il reconnaît dans une interview qu'il a mal joué et qu'il est déçu.</p>
+			
+<p class="infos">TAGS: WPT World Championship, Bertrand &quot;Elky&quot; Grospellier, Scotty Nguyen</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">451 vues, 0.00
+                / 5, 00:11:01</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/NPEBAbH25zmFGve23XNB.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['NPEBAbH25zmFGve23XNB']=0; pic['NPEBAbH25zmFGve23XNB']=new Array(); pics['NPEBAbH25zmFGve23XNB']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-187-WPT-World-Championship-2009---Part-3'> <img id='NPEBAbH25zmFGve23XNB' class=t width=180 height=130 src='uploads/thumbs/NPEBAbH25zmFGve23XNB.jpg'
+onmouseout='endm("NPEBAbH25zmFGve23XNB"); this.src="uploads/thumbs/NPEBAbH25zmFGve23XNB.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("NPEBAbH25zmFGve23XNB","uploads/thumbs/NPEBAbH25zmFGve23XNB.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-187-WPT-World-Championship-2009---Part-3">
+                WPT World Championship 2009 - Part 3
+                </a></p>
+<p class="infos">Au cours de cette vidéo vous pouvez suivre une jolie main entre Yevgheny Timoshenko et Christian Harder. Le Russe gagne et il est toujours le chip leader de la table. Shannon Shorr a débuté à cette table finale en position short-stack, mais juste après quelques mains il se trouve en deuxième position. Il fait un très bon jeu. Aucun joueur n'est éliminé au cours de cette vidéo.</p>
+			
+<p class="infos">TAGS: WPT World Championship, Bertrand &quot;Elky&quot; Grospellier, Scotty Nguyen</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">346 vues, 0.00
+                / 5, 00:11:00</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/OcfsUKxkZJ3u0bDrn4XP.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['OcfsUKxkZJ3u0bDrn4XP']=0; pic['OcfsUKxkZJ3u0bDrn4XP']=new Array(); pics['OcfsUKxkZJ3u0bDrn4XP']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-189-WPT-World-Championship-2009---Part-5'> <img id='OcfsUKxkZJ3u0bDrn4XP' class=t width=180 height=130 src='uploads/thumbs/OcfsUKxkZJ3u0bDrn4XP.jpg'
+onmouseout='endm("OcfsUKxkZJ3u0bDrn4XP"); this.src="uploads/thumbs/OcfsUKxkZJ3u0bDrn4XP.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("OcfsUKxkZJ3u0bDrn4XP","uploads/thumbs/OcfsUKxkZJ3u0bDrn4XP.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-189-WPT-World-Championship-2009---Part-5">
+                WPT World Championship 2009 - Part 5
+                </a></p>
+<p class="infos">C'est la septième saison du WPT World Championship et il y restent encore 4 finalistes: Bertrand &quot;Elky&quot; Grospellier, Ran Azor, Yevgheny Timoshenko et Christian Harder. Les commentateurs de l'événement soulignent le fait que jusqu'à présent la table finale a été un &quot;one man show&quot; du joueur russe de 21 ans. La vidéo finit dramatiquement avec une main entre Christian Harder et Ran Azor. Christian pari tous ses jetons, mais il faut suivre la sixième vidéo pour voir s'il sera éliminé ou non de la compétition.</p>
+			
+<p class="infos">TAGS: WPT World Championship, Bertrand &quot;Elky&quot; Grospellier, Scotty Nguyen</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">436 vues, 0.00
+                / 5, 00:10:57</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/00FAbQaEZbNMTvDWJbtK.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['00FAbQaEZbNMTvDWJbtK']=0; pic['00FAbQaEZbNMTvDWJbtK']=new Array(); pics['00FAbQaEZbNMTvDWJbtK']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-184-WPT-World-Championship-2009---Part-1'> <img id='00FAbQaEZbNMTvDWJbtK' class=t width=180 height=130 src='uploads/thumbs/00FAbQaEZbNMTvDWJbtK.jpg'
+onmouseout='endm("00FAbQaEZbNMTvDWJbtK"); this.src="uploads/thumbs/00FAbQaEZbNMTvDWJbtK.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("00FAbQaEZbNMTvDWJbtK","uploads/thumbs/00FAbQaEZbNMTvDWJbtK.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-184-WPT-World-Championship-2009---Part-1">
+                WPT World Championship 2009 - Part 1
+                </a></p>
+<p class="infos">Le WPT World Championship 2009 s'est déroulé au Casino Bellagio. 338 joueurs inscrits au tournoi et 6 restés dans la compétition. Les voilà: <br />
+<br />
+1. Ran Azor d'Israel<br />
+2. Bertrand &quot;Elky&quot; Grospellier de France<br />
+3. Scotty Nguyen des Etats-Unis<br />
+4. Shannon Shorr des Etats-Unis<br />
+5. Yevgheny Timoshenko de Russie<br />
+6. Christian Harder des Etats-Unis<br />
+<br />
+Le WPT World Championship 2009 est un aimant qui attire tous les meilleurs joueurs de poker du monde. Le grand prix de cette année est de 2,1 millions de dollars. Suivez les autres 7 vidéos pour voir le classement final et découvrir le gagnant du titre.</p>
+			
+<p class="infos">TAGS: WPT World Championship, Bertrand &quot;Elky&quot; Grospellier, Scotty Nguyen</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">455 vues, 0.00
+                / 5, 00:10:57</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/tsm5cXIxKbzQw2xcuvJz.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['tsm5cXIxKbzQw2xcuvJz']=0; pic['tsm5cXIxKbzQw2xcuvJz']=new Array(); pics['tsm5cXIxKbzQw2xcuvJz']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-190-WPT-World-Championship-2009---Part-6'> <img id='tsm5cXIxKbzQw2xcuvJz' class=t width=180 height=130 src='uploads/thumbs/tsm5cXIxKbzQw2xcuvJz.jpg'
+onmouseout='endm("tsm5cXIxKbzQw2xcuvJz"); this.src="uploads/thumbs/tsm5cXIxKbzQw2xcuvJz.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("tsm5cXIxKbzQw2xcuvJz","uploads/thumbs/tsm5cXIxKbzQw2xcuvJz.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-190-WPT-World-Championship-2009---Part-6">
+                WPT World Championship 2009 - Part 6
+                </a></p>
+<p class="infos">C'est la continuation de la main disputée entre Ran Azor et Christian Harder. L'Américain joue mal et Ran reste, même s'il n'avait que 20% chances de gagner la main. Il ne faut pas rater la main entre Elky, Ran et Harder, car le joueur israélien réussit à éliminer les deux à la fois. Christian Harder sort en quatrième place et remporte 571.965$ et Bertrand &quot;Elky&quot; Grospellier finit en troisième place et remporte 776.245$. Il est déçu, mais il doit être fier de son autre titre. Il est devenu &quot;Le meilleur joueur WPT de l'année 2009&quot;.<br />
+<br />
+Maintenant c'est le heads-up et tout le monde regarde avec enthousiasme Ran Azor et Yevgheny Timoshenko.</p>
+			
+<p class="infos">TAGS: WPT World Championship, Bertrand &quot;Elky&quot; Grospellier, Scotty Nguyen</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">360 vues, 0.00
+                / 5, 00:11:02</p>
+</div>
+
+<hr />
+
+
+</p>
+	<!-- Pagination start -->
+<div id="pagination">
+<ul>
+<li><a href="search.php?page=1&keyword=Timoshenko,&type=videos">1</a></li>
+</ul>
+</div>
+<!-- Pagination end -->	
+
+
+
+  
+    <div class="bas">
+<p class="bas">support[at]poker5.tv - <strong>copyright 2007 poker5.tv</strong> - <a href="rss.php"><img src="../images/feed-icon-14x14.png" width="14" height="14" border="0" align="absbottom"><br>
+  <a href="http://www.poker5.tv/last_com.php">commentaires</a> | <a href="http://www.poker5.tv/videos_poker.php">liste des  vid&eacute;os</a>  | <a href="http://www.poker5.tv/tags.php">tags</a> | <a href="http://www.poker5.tv/stats.php">stats</a> <a href="http://www.xiti.com/xiti.asp?s=360442" title="WebAnalytics">
+<script type="text/javascript">
+<!--
+Xt_param = 's=360442&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="80" height="15" border="0" alt="" ';
+Xt_i += 'src="http://logv3.xiti.com/g.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="80" height="15" src="http://logv3.xiti.com/g.xiti?s=360442&p=" alt="WebAnalytics" />
+</noscript></a>
+</p>
+  </div>
+</div>
+
+
+<div id="Layer2">
+<iframe align="center" name="nl" scrolling="no" marginwidth="0" marginheight="0" height="600" width="120" border="0" frameborder="0" src="http://www.poker5.tv/pub120600.php" style="border:0px;"></iframe>
+<br>
+<span class="intro">Poker5.tv vous recommande les sites suivants:<br>
+<a href="http://fr.virtuacasinos.com/">jeux casino</a><br>
+<a href="http://www.mescasinos.org">casino</a><br>
+<a href="http://www.poker-fr.org">poker en ligne</a><br>
+<a href="http://www.casinos-hits.com">casino en ligne</a><br>
+<a href=http://www.pokerligne.org/ target="_blank">poker en ligne</a><br>
+<a href="http://www.jeux-de-casinos.com/free.php" >Casino gratuit</a><br>
+<a href="http://www.guide-poker.eu">Jouer au poker</a><br>
+<a href="http://www.onlinepokerinfo.fr">Poker</a><br>
+<a href="http://poker.comprendrechoisir.com/comprendre/combinaison" title="Poker combinaison" target="_blank">Poker combinaison</a><br>
+<a href="http://paris-sportifs.comprendrechoisir.com/" title="Pari sportif" target="_blank">Pari sportif</a>
+</span>
+
+</div>
+</body>
+
+</html><div style="margin-left:auto; margin-right:auto; width:200px; height:20px; border:#999999 1px solid; line-height:15px; text-align:center; padding-left:5px; padding-right:5px; margin-top:15px; visibility:visible; background-color:#FFFFFF; clear:both">
+<a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Powered by PHPmotion -</a> <a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Free Video Script</a></div>

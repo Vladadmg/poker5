@@ -1,0 +1,551 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Le tube du poker en ligne - </title>
+
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+	<script type='text/javascript' src='http://www.poker5.tv/thumbs.js'></script></script>
+
+<script language="javascript1.3" src="javascripts/ahah.js" ></script>
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+
+
+.flottante {
+background-color: #6fa797;
+margin: 2px;
+float: left;
+width: 131px;
+height: 20px;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+
+.flottante a{
+
+font-size:15px; 
+color:#ffffff;
+font-weight: bold;
+text-decoration:none;
+}
+.flottante a:hover{
+background-color:407163 ;
+text-decoration:underline;
+}
+
+.bas {
+
+margin: 2px;
+float: left;
+width: 100%;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+.menu {
+width: 100%;
+}
+.spacer {
+clear: both;
+}
+
+
+#Layer1 {
+	position:absolute;
+	width:230px;
+	height:42px;
+	z-index:1;
+	left: 618px;
+	top: 41px;}
+
+
+#Layer2 {
+	position:absolute;
+	width:120px;
+	height:600px;
+	z-index:1;
+	left: 826px;
+	top: 79px;
+}
+
+
+
+
+
+
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font:normal 13px Arial;
+line-height:18px;
+z-index:100;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+color:#FFFFFF;
+border-bottom: 1px solid black;
+padding: 1px 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #182322;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="http://www.poker5.tv/seemore.php?load=bestnote">Les mieux notées</a>'
+menu1[1]='<a href="http://www.poker5.tv/seemore.php?load=viewed">Les plus vues</a>'
+menu1[2]='<a href="http://www.poker5.tv/seemore.php?load=featured">Les plus longues</a>'
+menu1[3]='<a href="http://www.poker5.tv/seemore.php?page=1&load=recent">Les plus récentes</a>'
+menu1[4]='<a href="http://www.poker5.tv/seemore.php?load=alpha">De A à Z</a>'
+
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='#6fa797'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+</head>
+<script type="text/javascript" src="swfobject.js"></script>
+<body>
+<div id="conteneur">
+  <a href="index.php"><img src="../images/poker5.jpg" alt="le poker en vidéo" border="0"></a>
+  
+
+  
+  <div id="Layer1"> 
+    <form method="POST" action="search.php">
+      
+              <input name="keyword" type="text" class="query" onFocus="if (this.value=='Vos mots clés'){this.value=''}" onBlur="if(this.value==''){this.value='Vos mots clés'}" value="Vos mots clés" size="20">
+              
+              <input type="hidden" name="type" value="videos" />
+              <input type="submit" value="GO!" name="B2"  >      
+  </form></div>
+  <div class="menu">
+<p class="flottante"><a href="index.php">Videos</a></p>
+<p class="flottante"><a href="seemore.php?load=viewed" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '150px')" onMouseout="delayhidemenu()">Les meilleures</a></p>
+<p class="flottante"><a href="category.php">Cat&eacute;gories</a></p>
+<p class="flottante"><a href="groups.php">Groupes</a></p>
+<p class="flottante"><a href="login.php">Inscription</a></p>
+<p class="flottante"><a href="myaccount.php"></a> <a href="login.php">
+          Connexion
+          </a></p>
+</div>
+
+ 
+
+<div>
+
+            
+
+
+
+</div>
+
+
+
+
+
+  <table border="0" width="100%" id="table29" style="border-style:solid; border-width:1px; " class="warning_box_green">
+    
+  </table>
+	<table border="0" width="100%" id="table30" style="border-style:solid; "  class="warning_box_green_white">
+      
+    </table>
+	<table border="0" width="100%" id="table31" class="warning_box_red">
+      
+    </table>
+	<span class="categories">R&eacute;sultats de la recherche pour :&quot;Justin&quot;</span>
+	
+	<p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/PPVUWuZxKM2FhUFTtjIE.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['PPVUWuZxKM2FhUFTtjIE']=0; pic['PPVUWuZxKM2FhUFTtjIE']=new Array(); pics['PPVUWuZxKM2FhUFTtjIE']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-212-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-5'> <img id='PPVUWuZxKM2FhUFTtjIE' class=t width=180 height=130 src='uploads/thumbs/PPVUWuZxKM2FhUFTtjIE.jpg'
+onmouseout='endm("PPVUWuZxKM2FhUFTtjIE"); this.src="uploads/thumbs/PPVUWuZxKM2FhUFTtjIE.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("PPVUWuZxKM2FhUFTtjIE","uploads/thumbs/PPVUWuZxKM2FhUFTtjIE.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-212-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-5">
+                WSOP 2009 - 40.000$ No-Limit Hold'em Champion...
+                </a></p>
+<p class="infos">Cinquième partie de la série &quot;40.000$ No-Limit Hold'em Championship&quot;. La table finale continue et le joueur le plus actif jusqu'à présent est Grag Raymer. <br />
+<br />
+Le cinquième joueur à être éliminé est Justin Bonomo. C'est son ami Isaac Haxton qui l'envoie en cinquième place du tournoi.</p>
+			
+<p class="infos">TAGS: WSOP 2009, Las Vegas, Rio, No-Limit Hold'em, Grag Raymer, Justin Bonomo</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">783 vues, 0.00
+                / 5, 00:07:41</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/xLySk1OSENOqWgcR0mvK.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['xLySk1OSENOqWgcR0mvK']=0; pic['xLySk1OSENOqWgcR0mvK']=new Array(); pics['xLySk1OSENOqWgcR0mvK']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-209-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-2'> <img id='xLySk1OSENOqWgcR0mvK' class=t width=180 height=130 src='uploads/thumbs/xLySk1OSENOqWgcR0mvK.jpg'
+onmouseout='endm("xLySk1OSENOqWgcR0mvK"); this.src="uploads/thumbs/xLySk1OSENOqWgcR0mvK.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("xLySk1OSENOqWgcR0mvK","uploads/thumbs/xLySk1OSENOqWgcR0mvK.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-209-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-2">
+                WSOP 2009 - 40.000$ No-Limit Hold'em Champion...
+                </a></p>
+<p class="infos">Le tournoi 40.000$ No-Limit Hold'em Championship est un succès. Voilà la composition de la table finale, en ordre de la valeur des jetons:<br />
+<br />
+1. Ted Forrest - 560.000 en jetons<br />
+2. Noah Schwartz - 660.000<br />
+3. Dani Stern - 1.380.000<br />
+4. Justin Bonomo - 1.445.000<br />
+5. Alec Torelli - 2.420.000<br />
+6. Greg Raymer - 3.345.000<br />
+7. Lex Veldhuis - 3.805.000<br />
+8. Vitaly Lunkin (champion Main Event WSOP 2008) - 4.565.000<br />
+9. Isaac Haxton - 6.035.000<br />
+<br />
+Ted Forrest, entré en position de short-stack est le premier joueur éliminé. Il a 5 bracelets WSOP, 3 d'eux étant remportés en 1993.</p>
+			
+<p class="infos">TAGS: WSOP 2009, Las Vegas, Rio, No-Limit Hold'em, Noah Schwartz, Dani Stern, Justin Bonomo, Alec Torelli, Greg Raymer, Lex Veldhuis, Vitaly Lunkin, Isaac Haxton</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">795 vues, 0.00
+                / 5, 00:07:41</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/CKLFOGKRVgEOBHpvB0XQ.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['CKLFOGKRVgEOBHpvB0XQ']=0; pic['CKLFOGKRVgEOBHpvB0XQ']=new Array(); pics['CKLFOGKRVgEOBHpvB0XQ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-216-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-9'> <img id='CKLFOGKRVgEOBHpvB0XQ' class=t width=180 height=130 src='uploads/thumbs/CKLFOGKRVgEOBHpvB0XQ.jpg'
+onmouseout='endm("CKLFOGKRVgEOBHpvB0XQ"); this.src="uploads/thumbs/CKLFOGKRVgEOBHpvB0XQ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("CKLFOGKRVgEOBHpvB0XQ","uploads/thumbs/CKLFOGKRVgEOBHpvB0XQ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-216-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-9">
+                WSOP 2009 - 40.000$ No-Limit Hold'em Champion...
+                </a></p>
+<p class="infos">Et voilà la dernière partie de notre série de vidéos &quot;WSOP 2009 - 40.000$ No-Limit Hold'em Championship&quot;. C'est le heads-up et le jeu et assez équilibré. Finalement, on a quand-même un champion et son nom est Vitaly Lunkin, qui gagne son deuxième bracelet WSOP. Voilà le classement final et les prix des finalistes:<br />
+<br />
+1. Vitaly Lunkin - 1.891.012$<br />
+2. Isaac Haxton - 1.168.566$<br />
+3. Greg Raymer - 774.927$<br />
+4. Dani Stern - 548.315$<br />
+5. Justin Bonomo - 413.166$<br />
+6. Alec Torelli - 329.730$<br />
+7. Lex Veldhuis - 277.940$<br />
+8. Noah Schwartz - 246.834$<br />
+9. Ted Forest -230.317$</p>
+			
+<p class="infos">TAGS: WSOP 2009, Las Vegas, Rio, No-Limit Hold'em, Isaac Haxton, Vitaly Lunkin</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">761 vues, 0.00
+                / 5, 00:07:45</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/EUDqjnmDtvwouf5N03fX.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['EUDqjnmDtvwouf5N03fX']=0; pic['EUDqjnmDtvwouf5N03fX']=new Array(); pics['EUDqjnmDtvwouf5N03fX']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-211-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-4'> <img id='EUDqjnmDtvwouf5N03fX' class=t width=180 height=130 src='uploads/thumbs/EUDqjnmDtvwouf5N03fX.jpg'
+onmouseout='endm("EUDqjnmDtvwouf5N03fX"); this.src="uploads/thumbs/EUDqjnmDtvwouf5N03fX.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("EUDqjnmDtvwouf5N03fX","uploads/thumbs/EUDqjnmDtvwouf5N03fX.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-211-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-4">
+                WSOP 2009 - 40.000$ No-Limit Hold'em Champion...
+                </a></p>
+<p class="infos">La quatrième partie de la série 40.000$ No-Limit Hold'em Championship. Le chip leader de la table finale est Greg raymer. Celui-ci réussit à éliminer un autre joueur: Lex Veldhuis, qui finit l'événement en 7ème position. Alec Torelli est le suivant à quitter la table. Torelli finit le tournoi en 6ème position.</p>
+			
+<p class="infos">TAGS: WSOP 2009, Las Vegas, Rio, No-Limit Hold'em, Noah Schwartz, Dani Stern, Justin Bonomo, Alec Torelli, Greg Raymer, Lex Veldhuis, Vitaly Lunkin, Isaac Haxton</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">744 vues, 0.00
+                / 5, 00:07:40</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/afUamD5lkcdiRA2QcPWx.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['afUamD5lkcdiRA2QcPWx']=0; pic['afUamD5lkcdiRA2QcPWx']=new Array(); pics['afUamD5lkcdiRA2QcPWx']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-210-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-3'> <img id='afUamD5lkcdiRA2QcPWx' class=t width=180 height=130 src='uploads/thumbs/afUamD5lkcdiRA2QcPWx.jpg'
+onmouseout='endm("afUamD5lkcdiRA2QcPWx"); this.src="uploads/thumbs/afUamD5lkcdiRA2QcPWx.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("afUamD5lkcdiRA2QcPWx","uploads/thumbs/afUamD5lkcdiRA2QcPWx.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-210-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-3">
+                WSOP 2009 - 40.000$ No-Limit Hold'em Champion...
+                </a></p>
+<p class="infos">La continuation du tournoi 40.000$ No-Limit Hold'em Championship. Après une très jolie main, Raymer élimine Noah Schwartz en 8ème place.<br />
+<br />
+Raymer déclare que les joueurs participant à cet événement ont été les plus forts adversaires jamais rencontrés dans un tournoi de poker live. C'est pourquoi réussir à se qualifier à la table finale du tournoi 40.000$ No-Limit Hold'em Championship est vraiment un accomplissement pour lui. Il ajoute que son but est de remporter son deuxième bracelet WSOP. Greg Raymer est le champion WSOP 2004.</p>
+			
+<p class="infos">TAGS: WSOP 2009, Las Vegas, Rio, No-Limit Hold'em, Noah Schwartz, Dani Stern, Justin Bonomo, Alec Torelli, Greg Raymer, Lex Veldhuis, Vitaly Lunkin, Isaac Haxton</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">732 vues, 0.00
+                / 5, 00:07:46</p>
+</div>
+
+<hr />
+
+
+</p>
+	<!-- Pagination start -->
+<div id="pagination">
+<ul>
+<li><a href="search.php?page=1&keyword=Justin&type=videos">1</a></li>
+</ul>
+</div>
+<!-- Pagination end -->	
+
+
+
+  
+    <div class="bas">
+<p class="bas">support[at]poker5.tv - <strong>copyright 2007 poker5.tv</strong> - <a href="rss.php"><img src="../images/feed-icon-14x14.png" width="14" height="14" border="0" align="absbottom"><br>
+  <a href="http://www.poker5.tv/last_com.php">commentaires</a> | <a href="http://www.poker5.tv/videos_poker.php">liste des  vid&eacute;os</a>  | <a href="http://www.poker5.tv/tags.php">tags</a> | <a href="http://www.poker5.tv/stats.php">stats</a> <a href="http://www.xiti.com/xiti.asp?s=360442" title="WebAnalytics">
+<script type="text/javascript">
+<!--
+Xt_param = 's=360442&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="80" height="15" border="0" alt="" ';
+Xt_i += 'src="http://logv3.xiti.com/g.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="80" height="15" src="http://logv3.xiti.com/g.xiti?s=360442&p=" alt="WebAnalytics" />
+</noscript></a>
+</p>
+  </div>
+</div>
+
+
+<div id="Layer2">
+<iframe align="center" name="nl" scrolling="no" marginwidth="0" marginheight="0" height="600" width="120" border="0" frameborder="0" src="http://www.poker5.tv/pub120600.php" style="border:0px;"></iframe>
+<br>
+<span class="intro">Poker5.tv vous recommande les sites suivants:<br>
+<a href="http://fr.virtuacasinos.com/">jeux casino</a><br>
+<a href="http://www.mescasinos.org">casino</a><br>
+<a href="http://www.poker-fr.org">poker en ligne</a><br>
+<a href="http://www.casinos-hits.com">casino en ligne</a><br>
+<a href=http://www.pokerligne.org/ target="_blank">poker en ligne</a><br>
+<a href="http://www.jeux-de-casinos.com/free.php" >Casino gratuit</a><br>
+<a href="http://www.guide-poker.eu">Jouer au poker</a><br>
+<a href="http://www.onlinepokerinfo.fr">Poker</a><br>
+<a href="http://poker.comprendrechoisir.com/comprendre/combinaison" title="Poker combinaison" target="_blank">Poker combinaison</a><br>
+<a href="http://paris-sportifs.comprendrechoisir.com/" title="Pari sportif" target="_blank">Pari sportif</a>
+</span>
+
+</div>
+</body>
+
+</html><div style="margin-left:auto; margin-right:auto; width:200px; height:20px; border:#999999 1px solid; line-height:15px; text-align:center; padding-left:5px; padding-right:5px; margin-top:15px; visibility:visible; background-color:#FFFFFF; clear:both">
+<a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Powered by PHPmotion -</a> <a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Free Video Script</a></div>

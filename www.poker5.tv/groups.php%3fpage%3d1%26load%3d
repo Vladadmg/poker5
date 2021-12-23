@@ -1,0 +1,650 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Le tube du poker en ligne - </title>
+
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+	<script type='text/javascript' src='http://www.poker5.tv/thumbs.js'></script></script>
+
+<script language="javascript1.3" src="javascripts/ahah.js" ></script>
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+
+
+.flottante {
+background-color: #6fa797;
+margin: 2px;
+float: left;
+width: 121px;
+height: 20px;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+
+.flottante a{
+
+font-size:15px; 
+color:#ffffff;
+font-weight: bold;
+text-decoration:none;
+}
+.flottante a:hover{
+background-color:407163 ;
+text-decoration:underline;
+}
+
+.bas {
+
+margin: 2px;
+float: left;
+width: 100%;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+.menu {
+width: 100%;
+}
+.spacer {
+clear: both;
+}
+
+
+#Layer1 {
+	position:absolute;
+	width:230px;
+	height:42px;
+	z-index:1;
+	left: 540px;
+	top: 13px;}
+
+
+#Layer2 {
+	position:absolute;
+	width:120px;
+	height:600px;
+	z-index:1;
+	left: 776px;
+	top: 4px;
+}
+</style>
+</head>
+<script type="text/javascript" src="swfobject.js"></script>
+<body>
+<div id="conteneur">
+  <a href="index.php"><img src="../images/poker5.jpg" alt="le poker en vidéo" border="0"></a>
+  
+
+  
+  <div id="Layer1"> 
+    <form method="POST" action="search.php">
+      
+              <input name="keyword" type="text" class="query" onFocus="if (this.value=='Vos mots clés'){this.value=''}" onBlur="if(this.value==''){this.value='Vos mots clés'}" value="Vos mots clés" size="20">
+              
+              <input type="hidden" name="type" value="videos" />
+              <input type="submit" value="GO!" name="B2"  >      
+  </form></div>
+  <div class="menu">
+<p class="flottante"><a href="index.php">Videos</a></p>
+<p class="flottante"><a href="seemore.php?load=viewed" >Les + vues</a></p>
+<p class="flottante"><a href="category.php">Cat&eacute;gories</a></p>
+<p class="flottante"><a href="groups.php">Groupes</a></p>
+<p class="flottante"><a href="login.php">Inscription</a></p>
+<p class="flottante"><a href="myaccount.php"></a> <a href="login.php">
+          Connexion
+          </a></p>
+</div>
+
+ 
+
+<div>
+
+            
+
+
+
+<ul class="menuhaut"><a href="myaccount.php"> Mon compte</a> | <a href="groups.php">Tous les groupes</a>| <a href="groups.php?load=featured">Groupes s&eacute;lectionn&eacute;s</a> | <a href="groups.php?load=new">Nouveaux groupes</a> | <a href="addgroup.php">Cr&eacute;er un groupe</a>
+            </ul></div>
+
+
+
+
+<div align="center">
+	<table border="0" id="table1" height="453" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+			<div align="center">
+			<table border="0" width="100%" id="table53" style="border-style:solid; border-width:1px; " class="warning_box_green">
+				
+			</table>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="center">
+			<table border="0" width="100%" id="table54" style="border-style:solid; " bgcolor="#FFFFFF" class="warning_box_green_white">
+				
+			</table>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div align="center">
+			<table border="0" width="100%" id="table55" class="warning_box_red">
+				
+			</table>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<img border="0" src="images/spacer_5pix.gif" width="1" height="15"></td>
+		</tr>
+
+			<tr id="tr_login">
+			<td align="center" valign="top">
+			<table border="0" id="table6" height="418" cellspacing="0" cellpadding="0">
+				<tr>
+					<td height="414" valign="top">
+					<table border="0" width="100%" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table9" cellspacing="0" cellpadding="0">
+						<tr>
+							<td colspan="3" height="35" style="border: 0px solid #C0CEEF; " class="default_text_blue">
+							<b>
+							<font color="#3366CC" size="3">&nbsp;Groupes: 
+							(Tous)</font></b></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" width="14%">
+							<table border="0" width="38%" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table10" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="left">
+									<table border="0" width="100%" bordercolor="#CCCCCC" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" id="table11">
+										<tr>
+							<td width="98%" height="167" align="left" valign="top" bgcolor="#FBFBFB">
+							<table border="0" width="38%" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table46" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="left">
+									<table border="0" width="100%" bordercolor="#CCCCCC" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" id="table47">
+										<tr>
+							<td width="98%" height="167" align="left" valign="top">
+							<table border="0" width="121" bordercolor="#CCCCCC" bgcolor="#FBFBFB" cellspacing="0" cellpadding="0" id="table48" height="106">
+								<tr>
+									<td width="121" height="22" style="border-style:solid; border-width:0px; ">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" id="table49">
+										<tr>
+											<td width="4">
+											<img border="0" src="images/box_blue_square_left.jpg" width="4" height="25"></td>
+											<td background="images/box_blue_middle.jpg" class="default_text_white">&nbsp;<b>Tous les groupes </b></td>
+											<td width="4">
+											<img border="0" src="images/box_blue_square_right.jpg" width="4" height="25"></td>
+										</tr>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">&nbsp;</td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">
+									<font face="Arial" size="2">
+									<b>
+									<font color="#3366CC">&nbsp; </font>
+									<a href="groups.php"><font color="#3366CC">
+									Tous</font></a></b></font></td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">
+									<font face="Arial" size="2">
+									<b>
+									<font color="#3366CC">&nbsp; </font>
+									<a href="groups.php?load=featured">
+									<font color="#3366CC">S&eacute;lectionn&eacute;s</font></a></b></font></td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">
+									<font face="Arial" size="2">
+									<b>
+									<font color="#3366CC">&nbsp; </font>
+							<a href="groups.php?load=new">
+									<font color="#3366CC">Cr&eacute;es aujourdhui </font></a></b></font></td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">
+									<font face="Arial" size="2">
+									<b>
+									<font color="#3366CC">&nbsp; </font>
+									<a href="addgroup.php">
+									<font color="#3366CC">Cr&eacute;er un groupe </font></a></b></font></td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_b_r">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="121" align="right" bgcolor="#FFFFFF" height="7">
+									<p align="center"></td>
+								</tr>
+								<tr>
+									<td width="121" align="right" bgcolor="#FFFFFF" height="3">
+									<table border="0" width="100%" bordercolor="#CCCCCC" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" id="table50">
+										<tr>
+							<td width="98%" height="167" align="left" valign="top">
+							<table border="0" width="121" bordercolor="#CCCCCC" bgcolor="#FBFBFB" cellspacing="0" cellpadding="0" id="table51" height="164">
+								<tr>
+									<td width="121" height="22" style="border-style:solid; border-width:0px; ">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" id="table52">
+										<tr>
+											<td width="4">
+											<img border="0" src="images/box_blue_square_left.jpg" width="4" height="25"></td>
+											<td background="images/box_blue_middle.jpg" class="default_text_white">&nbsp;<b>Videos</b></td>
+											<td width="4">
+											<img border="0" src="images/box_blue_square_right.jpg" width="4" height="25"></td>
+										</tr>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">&nbsp;</td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">
+									<font face="Arial" size="2" color="#3366CC">&nbsp;</font><b><font face="Arial" size="2"><font color="#3366CC">&nbsp;
+									</font><a href="seemore.php?load=featured">
+									<font color="#3366CC">S&eacute;lectionn&eacute;s
+									</font></a>
+									</font></b></td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">
+									<font face="Arial" size="2" color="#3366CC">&nbsp;</font><b><font face="Arial" size="2"><font color="#3366CC">&nbsp;
+									</font><a href="seemore.php?load=viewed">
+									<font color="#3366CC">Les + vues</font></a></font></b></td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">
+									<font face="Arial" size="2" color="#3366CC">&nbsp;&nbsp;
+									</font>
+									<b>
+									<a href="seemore.php?load=recent">
+									<font face="Arial" size="2" color="#3366CC">Les + r&eacute;centes </font></a></b></td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_r">
+									<font face="Arial" size="2" color="#3366CC">&nbsp;&nbsp;
+									</font>
+									<b>
+									<a href="seemore.php?load=comments">
+									<font face="Arial" size="2" color="#3366CC">
+									Les + comment&eacute;es </font></a></b></td>
+								</tr>
+								<tr>
+									<td width="121" align="left" height="20" class="table_border_l_b_r">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="121" align="right" bgcolor="#FFFFFF" height="19">
+									<p align="center"></td>
+								</tr>
+								</table>
+							</td>
+										</tr>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td width="121" align="right" bgcolor="#FFFFFF" height="3">
+									<p align="center">
+									<!--ads left start -->
+									
+									<!--ads left end -->
+
+									</td>
+								</tr>
+								<tr>
+									<td width="121" align="right" bgcolor="#FFFFFF" height="3">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="121" align="right" bgcolor="#FFFFFF" height="3">&nbsp;
+									</td>
+								</tr>
+								</table>
+							</td>
+										</tr>
+									</table>
+									</td>
+								</tr>
+							</table>
+							</td>
+										</tr>
+									</table>
+									</td>
+								</tr>
+							</table>
+							</td>
+							<td width="66%" height="361" align="right" valign="top" rowspan="2" bgcolor="#F3F6FC" style="border: 0px solid #C0C0C0; ">
+							<div align="center">
+							<div align="center">
+					<table border="0" width="566" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table31" cellspacing="0">
+						<tr>
+							<td width="20%" rowspan="4" style="border-left: 1px solid #C0C0C0; border-right-width: 1px; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+							<p align="center">
+										<a href="group_home.php?gid=21">
+										<img border="0" src="uploads/thumbs/.jpg" width="120" height="90"></a></td>
+							<td width="15%" style="border-left-width: 1px; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							Nom du groupe </td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							<a href="group_home.php?gid=21">gros seins
+							</a></td>
+						</tr>
+						<tr>
+							<td width="15%" height="24" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Date de cr&eacute;ation </td>
+							<td width="62%" colspan="5" height="24" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							02-09-07</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Description</td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							gros seins</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							Videos</td>
+							<td width="7%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(2)</td>
+							<td width="13%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center"><b><font style="font-size: 9pt">membres</font></b></td>
+							<td width="8%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(12)</td>
+							<td width="9%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px" class="default_text_9pt">
+							&nbsp;<b>admin</b></td>
+							<td width="24%" style="border-bottom:1px solid #C0C0C0; border-right:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							&nbsp;<b><font color="#3366CC"><a href="memberprofile.php?uid=18"><font color="#3366CC"></a></font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#CCCCCC"><b>
+							<font face="Arial" size="2">&nbsp;&nbsp; Derni&egrave;re vid&eacute;o </font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#F3F6FC">&nbsp;</td>
+						</tr>
+					</table><table border="0" width="566" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table31" cellspacing="0">
+						<tr>
+							<td width="20%" rowspan="4" style="border-left: 1px solid #C0C0C0; border-right-width: 1px; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+							<p align="center">
+										<a href="group_home.php?gid=22">
+										<img border="0" src="uploads/thumbs/.jpg" width="120" height="90"></a></td>
+							<td width="15%" style="border-left-width: 1px; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							Nom du groupe </td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							<a href="group_home.php?gid=22">Milena Velba
+							</a></td>
+						</tr>
+						<tr>
+							<td width="15%" height="24" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Date de cr&eacute;ation </td>
+							<td width="62%" colspan="5" height="24" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							28-10-07</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Description</td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Milena Velba gros seins</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							Videos</td>
+							<td width="7%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(8)</td>
+							<td width="13%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center"><b><font style="font-size: 9pt">membres</font></b></td>
+							<td width="8%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(6)</td>
+							<td width="9%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px" class="default_text_9pt">
+							&nbsp;<b>admin</b></td>
+							<td width="24%" style="border-bottom:1px solid #C0C0C0; border-right:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							&nbsp;<b><font color="#3366CC"><a href="memberprofile.php?uid=206"><font color="#3366CC">marian</a></font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#CCCCCC"><b>
+							<font face="Arial" size="2">&nbsp;&nbsp; Derni&egrave;re vid&eacute;o </font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#F3F6FC">&nbsp;</td>
+						</tr>
+					</table><table border="0" width="566" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table31" cellspacing="0">
+						<tr>
+							<td width="20%" rowspan="4" style="border-left: 1px solid #C0C0C0; border-right-width: 1px; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+							<p align="center">
+										<a href="group_home.php?gid=23">
+										<img border="0" src="uploads/thumbs/default_no_group_video.jpg" width="120" height="90"></a></td>
+							<td width="15%" style="border-left-width: 1px; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							Nom du groupe </td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							<a href="group_home.php?gid=23">SEX
+							</a></td>
+						</tr>
+						<tr>
+							<td width="15%" height="24" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Date de cr&eacute;ation </td>
+							<td width="62%" colspan="5" height="24" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							25-11-07</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Description</td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							SEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							Videos</td>
+							<td width="7%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(0)</td>
+							<td width="13%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center"><b><font style="font-size: 9pt">membres</font></b></td>
+							<td width="8%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(2)</td>
+							<td width="9%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px" class="default_text_9pt">
+							&nbsp;<b>admin</b></td>
+							<td width="24%" style="border-bottom:1px solid #C0C0C0; border-right:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							&nbsp;<b><font color="#3366CC"><a href="memberprofile.php?uid=2401"><font color="#3366CC">NORD1G</a></font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#CCCCCC"><b>
+							<font face="Arial" size="2">&nbsp;&nbsp; Derni&egrave;re vid&eacute;o </font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#F3F6FC">&nbsp;</td>
+						</tr>
+					</table><table border="0" width="566" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table31" cellspacing="0">
+						<tr>
+							<td width="20%" rowspan="4" style="border-left: 1px solid #C0C0C0; border-right-width: 1px; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+							<p align="center">
+										<a href="group_home.php?gid=24">
+										<img border="0" src="uploads/thumbs/.jpg" width="120" height="90"></a></td>
+							<td width="15%" style="border-left-width: 1px; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							Nom du groupe </td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							<a href="group_home.php?gid=24">Pisse Urine Uro
+							</a></td>
+						</tr>
+						<tr>
+							<td width="15%" height="24" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Date de cr&eacute;ation </td>
+							<td width="62%" colspan="5" height="24" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							29-01-08</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Description</td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Pipi</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							Videos</td>
+							<td width="7%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(4)</td>
+							<td width="13%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center"><b><font style="font-size: 9pt">membres</font></b></td>
+							<td width="8%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(5)</td>
+							<td width="9%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px" class="default_text_9pt">
+							&nbsp;<b>admin</b></td>
+							<td width="24%" style="border-bottom:1px solid #C0C0C0; border-right:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							&nbsp;<b><font color="#3366CC"><a href="memberprofile.php?uid="><font color="#3366CC"></a></font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#CCCCCC"><b>
+							<font face="Arial" size="2">&nbsp;&nbsp; Derni&egrave;re vid&eacute;o </font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#F3F6FC">&nbsp;</td>
+						</tr>
+					</table><table border="0" width="566" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table31" cellspacing="0">
+						<tr>
+							<td width="20%" rowspan="4" style="border-left: 1px solid #C0C0C0; border-right-width: 1px; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+							<p align="center">
+										<a href="group_home.php?gid=25">
+										<img border="0" src="uploads/thumbs/default_no_group_video.jpg" width="120" height="90"></a></td>
+							<td width="15%" style="border-left-width: 1px; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							Nom du groupe </td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top: 1px solid #C0C0C0; border-bottom-width: 1px" class="default_text_9pt">
+							<a href="group_home.php?gid=25">tripple X
+							</a></td>
+						</tr>
+						<tr>
+							<td width="15%" height="24" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Date de cr&eacute;ation </td>
+							<td width="62%" colspan="5" height="24" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							05-02-08</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							Description</td>
+							<td width="62%" colspan="5" style="border-left-width: 1px; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom-width: 1px" class="default_text_9pt">
+							xxxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXX</td>
+						</tr>
+						<tr>
+							<td width="15%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							Videos</td>
+							<td width="7%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(0)</td>
+							<td width="13%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center"><b><font style="font-size: 9pt">membres</font></b></td>
+							<td width="8%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							<p align="center">(2)</td>
+							<td width="9%" style="border-bottom:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px" class="default_text_9pt">
+							&nbsp;<b>admin</b></td>
+							<td width="24%" style="border-bottom:1px solid #C0C0C0; border-right:1px solid #C0C0C0; border-left-width: 1px; border-top-width: 1px; " class="default_text_9pt">
+							&nbsp;<b><font color="#3366CC"><a href="memberprofile.php?uid=7519"><font color="#3366CC">wxcvbnazer</a></font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#CCCCCC"><b>
+							<font face="Arial" size="2">&nbsp;&nbsp; Derni&egrave;re vid&eacute;o </font></b></td>
+						</tr>
+						<tr>
+							<td colspan="7" bgcolor="#F3F6FC">&nbsp;</td>
+						</tr>
+					</table>
+							</div>
+							<table border="0" width="98%" bordercolor="#CCCCCC" style="border: 0px solid #C0CEEF; " id="table16" cellspacing="0">
+								
+								<tr>
+				<td height="13" width="50%" class="text_normal" bgcolor="#FFFFFF">
+					<p align="right">
+					<b>
+					Page 1 sur 1</b></td>
+				<td height="13" width="50%" class="text_normal" bgcolor="#FFFFFF">
+		&nbsp;&nbsp; <b>
+		<a href="groups.php?page=1&load="></a>&nbsp; 
+		<a href="groups.php?page=1&load=">
+		</a></b>&nbsp;
+				</td>
+								</tr>
+								<tr>
+				<td width="100%" colspan="2">&nbsp;
+					</td>
+								</tr>
+								<tr>
+				<td width="100%" colspan="2">&nbsp;
+									</td>
+								</tr>
+								<tr>
+				<td width="100%" colspan="2">&nbsp;
+									</td>
+								</tr>
+								<tr>
+				<td width="100%" colspan="2">&nbsp;
+									</td>
+								</tr>
+								<tr>
+				<td width="100%" colspan="2">&nbsp;
+									</td>
+								</tr>
+								<tr>
+				<td width="100%" colspan="2">&nbsp;
+					</td>
+								</tr>
+								<tr>
+				<td height="2" width="100%" colspan="2">
+					</td>
+								</tr>
+							</table>
+							</div>							
+							</td>
+							<td width="19%" height="361" align="center" valign="top" rowspan="2" bgcolor="#FFFFFF" class="table_ads_l_b_r_t">
+									<!--ads right start -->
+										
+									<!--ads right end -->
+									
+									</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	
+	</table>
+	</div>
+
+
+
+
+  
+    <div class="bas">
+<p class="bas">support[at]poker5.tv - <strong>copyright 2007 poker5.tv</strong> - <a href="rss.php"><img src="../images/feed-icon-14x14.png" width="14" height="14" border="0" align="absbottom"><br>
+  <a href="http://www.poker5.tv/last_com.php">commentaires</a> | <a href="http://www.poker5.tv/videos_sexe.php">liste des  vid&eacute;os</a>  | <a href="http://www.poker5.tv/tags.php">tags</a> | <a href="http://www.poker5.tv/stats.php">stats</a> </p>
+  </div>
+</div>
+
+
+<div id="Layer2"><a style="text-decoration: none;" href="http://banner.cdpoker.com/cgi-bin/redir.cgi?member=websmoney2&lang=fr" ><img src="http://cachewww.cpays.com/markettool/new_tools/cdpoker/French/bnr/euro/120x600/cdpfr12002.gif" width=120 border="0"></a></div>
+</body>
+
+</html><div align="center"><table border="0" cellpadding="0" cellspacing="0" width="183" id="table5"><tr><td>&nbsp;</td></tr><tr>
+	<td height="18" style="border: 1px solid #999999; " bgcolor="#FFFFFF"><p align="center">
+	<font face="Arial" color="#6B8FDA" style="font-size: 8pt">Powered free by </font>
+	<font face="Arial" color="#333333" style="font-size: 8pt"> <a href="http://www.phpmotion.com">
+	<font color="#6B8FDA">PHPmotion</font></a></font></td></tr></table></div>

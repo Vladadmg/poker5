@@ -1,0 +1,638 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Le tube du poker en ligne - </title>
+
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+	<script type='text/javascript' src='http://www.poker5.tv/thumbs.js'></script></script>
+
+<script language="javascript1.3" src="javascripts/ahah.js" ></script>
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+
+
+.flottante {
+background-color: #6fa797;
+margin: 2px;
+float: left;
+width: 131px;
+height: 20px;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+
+.flottante a{
+
+font-size:15px; 
+color:#ffffff;
+font-weight: bold;
+text-decoration:none;
+}
+.flottante a:hover{
+background-color:407163 ;
+text-decoration:underline;
+}
+
+.bas {
+
+margin: 2px;
+float: left;
+width: 100%;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+.menu {
+width: 100%;
+}
+.spacer {
+clear: both;
+}
+
+
+#Layer1 {
+	position:absolute;
+	width:230px;
+	height:42px;
+	z-index:1;
+	left: 618px;
+	top: 41px;}
+
+
+#Layer2 {
+	position:absolute;
+	width:120px;
+	height:600px;
+	z-index:1;
+	left: 826px;
+	top: 79px;
+}
+
+
+
+
+
+
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font:normal 13px Arial;
+line-height:18px;
+z-index:100;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+color:#FFFFFF;
+border-bottom: 1px solid black;
+padding: 1px 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #182322;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="http://www.poker5.tv/seemore.php?load=bestnote">Les mieux notées</a>'
+menu1[1]='<a href="http://www.poker5.tv/seemore.php?load=viewed">Les plus vues</a>'
+menu1[2]='<a href="http://www.poker5.tv/seemore.php?load=featured">Les plus longues</a>'
+menu1[3]='<a href="http://www.poker5.tv/seemore.php?page=1&load=recent">Les plus récentes</a>'
+menu1[4]='<a href="http://www.poker5.tv/seemore.php?load=alpha">De A à Z</a>'
+
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='#6fa797'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+</head>
+<script type="text/javascript" src="swfobject.js"></script>
+<body>
+<div id="conteneur">
+  <a href="index.php"><img src="../images/poker5.jpg" alt="le poker en vidéo" border="0"></a>
+  
+
+  
+  <div id="Layer1"> 
+    <form method="POST" action="search.php">
+      
+              <input name="keyword" type="text" class="query" onFocus="if (this.value=='Vos mots clés'){this.value=''}" onBlur="if(this.value==''){this.value='Vos mots clés'}" value="Vos mots clés" size="20">
+              
+              <input type="hidden" name="type" value="videos" />
+              <input type="submit" value="GO!" name="B2"  >      
+  </form></div>
+  <div class="menu">
+<p class="flottante"><a href="index.php">Videos</a></p>
+<p class="flottante"><a href="seemore.php?load=viewed" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '150px')" onMouseout="delayhidemenu()">Les meilleures</a></p>
+<p class="flottante"><a href="category.php">Cat&eacute;gories</a></p>
+<p class="flottante"><a href="groups.php">Groupes</a></p>
+<p class="flottante"><a href="login.php">Inscription</a></p>
+<p class="flottante"><a href="myaccount.php"></a> <a href="login.php">
+          Connexion
+          </a></p>
+</div>
+
+ 
+
+<div>
+
+            
+
+
+
+</div>
+
+
+
+
+
+  <table border="0" width="100%" id="table29" style="border-style:solid; border-width:1px; " class="warning_box_green">
+    
+  </table>
+	<table border="0" width="100%" id="table30" style="border-style:solid; "  class="warning_box_green_white">
+      
+    </table>
+	<table border="0" width="100%" id="table31" class="warning_box_red">
+      
+    </table>
+	<span class="categories">R&eacute;sultats de la recherche pour :&quot;2009,&quot;</span>
+	
+	<p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/SRc5oF3HIiemowepmRjm.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['SRc5oF3HIiemowepmRjm']=0; pic['SRc5oF3HIiemowepmRjm']=new Array(); pics['SRc5oF3HIiemowepmRjm']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-169-PPT-Nice-2009---Part-2'> <img id='SRc5oF3HIiemowepmRjm' class=t width=180 height=130 src='uploads/thumbs/SRc5oF3HIiemowepmRjm.jpg'
+onmouseout='endm("SRc5oF3HIiemowepmRjm"); this.src="uploads/thumbs/SRc5oF3HIiemowepmRjm.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("SRc5oF3HIiemowepmRjm","uploads/thumbs/SRc5oF3HIiemowepmRjm.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-169-PPT-Nice-2009---Part-2">
+                PPT Nice 2009 - Part 2
+                </a></p>
+<p class="infos">Voilà les résultats du Super Satellite du PPT Nice 2009:<br />
+<br />
+1. Sébastien Bouvron - 9.000€<br />
+2. Eric Haik - 5.000€<br />
+3. Jean-Philippe Rohr - 3.200.€<br />
+4. Reynald Frutos - 2.000€<br />
+5. Michel Bouquet 1.800€<br />
+6. Jeremy Palvini - 1.600€<br />
+7. Franck Notto  - 1.100€<br />
+8. Eric Barrandon  - 900€</p>
+			
+<p class="infos">TAGS: PPT Nice 2009</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">794 vues, 0.00
+                / 5, 00:43:49</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/cKRrjjsRAzt0VbYZjNYu.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['cKRrjjsRAzt0VbYZjNYu']=0; pic['cKRrjjsRAzt0VbYZjNYu']=new Array(); pics['cKRrjjsRAzt0VbYZjNYu']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-166-Table-finale-Aussie-Millions-2009---Part-1'> <img id='cKRrjjsRAzt0VbYZjNYu' class=t width=180 height=130 src='uploads/thumbs/cKRrjjsRAzt0VbYZjNYu.jpg'
+onmouseout='endm("cKRrjjsRAzt0VbYZjNYu"); this.src="uploads/thumbs/cKRrjjsRAzt0VbYZjNYu.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("cKRrjjsRAzt0VbYZjNYu","uploads/thumbs/cKRrjjsRAzt0VbYZjNYu.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-166-Table-finale-Aussie-Millions-2009---Part-1">
+                Table finale Aussie Millions 2009 - Part 1
+                </a></p>
+<p class="infos">L'Aussie Millions 2009 a eu lieu au Casino Crown Melbourne. 618 participants ont essayé de remporter le premier prix de 2 millions de dollars, y compris les uns des meilleurs joueurs de poker du monde, tels que Joe Hachem, Gus Hansen et Scotty Nguyen. Le champion de l'année dernière est Alexander Kostritsyn.</p>
+			
+<p class="infos">TAGS: Aussie Millions 2009</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">724 vues, 0.00
+                / 5, 00:08:45</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/rZxoayuSipFfayiqo5UT.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['rZxoayuSipFfayiqo5UT']=0; pic['rZxoayuSipFfayiqo5UT']=new Array(); pics['rZxoayuSipFfayiqo5UT']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-196-Grand-Prix-de-Paris-2009---Table-finale---Part-4'> <img id='rZxoayuSipFfayiqo5UT' class=t width=180 height=130 src='uploads/thumbs/rZxoayuSipFfayiqo5UT.jpg'
+onmouseout='endm("rZxoayuSipFfayiqo5UT"); this.src="uploads/thumbs/rZxoayuSipFfayiqo5UT.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("rZxoayuSipFfayiqo5UT","uploads/thumbs/rZxoayuSipFfayiqo5UT.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-196-Grand-Prix-de-Paris-2009---Table-finale---Part-4">
+                Grand Prix de Paris 2009 - Table finale - Par...
+                </a></p>
+<p class="infos">Quatrième partie du Grand Prix de Paris de Poker 2009 à l'Aviation Club de France le dimanche 17 mai 2009.<br />
+<br />
+C'est une situation qui paraît un peu bloquée, lorsque 4 des 6 joueurs n'ont pratiquement pas bougé. Vikash Dhorasoo se trouve en position de short-stack.</p>
+			
+<p class="infos">TAGS: Grand Prix de Paris, Aviation Club France, 2009, Nicolas Levi, Vikash Dhorasoo, Jérôme Zerbib, Jan Boubli, Fabrizio Ricci</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">540 vues, 0.00
+                / 5, 00:20:03</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/NyuZdm2CKrAYBX4eAdRU.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['NyuZdm2CKrAYBX4eAdRU']=0; pic['NyuZdm2CKrAYBX4eAdRU']=new Array(); pics['NyuZdm2CKrAYBX4eAdRU']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-165-Table-finale-Aussie-Millions-2009---Part-2'> <img id='NyuZdm2CKrAYBX4eAdRU' class=t width=180 height=130 src='uploads/thumbs/NyuZdm2CKrAYBX4eAdRU.jpg'
+onmouseout='endm("NyuZdm2CKrAYBX4eAdRU"); this.src="uploads/thumbs/NyuZdm2CKrAYBX4eAdRU.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("NyuZdm2CKrAYBX4eAdRU","uploads/thumbs/NyuZdm2CKrAYBX4eAdRU.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-165-Table-finale-Aussie-Millions-2009---Part-2">
+                Table finale Aussie Millions 2009 - Part 2
+                </a></p>
+<p class="infos">Dans la table finale de l'Aussie Millions 2009 se sont qualifiés 3 joueurs australiens: Steward Scott, Barny Boatman et Sam Capra. Le tournoi n'a jamais été remporté par un Australien et tout le monde espère que cette année soit différente...</p>
+			
+<p class="infos">TAGS: Aussie Millions 2009</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">611 vues, 0.00
+                / 5, 00:08:48</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/tGoUTRFpWkeKHgePMS2b.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['tGoUTRFpWkeKHgePMS2b']=0; pic['tGoUTRFpWkeKHgePMS2b']=new Array(); pics['tGoUTRFpWkeKHgePMS2b']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-193-Grand-Prix-de-Paris-2009---Table-finale---Part-1'> <img id='tGoUTRFpWkeKHgePMS2b' class=t width=180 height=130 src='uploads/thumbs/tGoUTRFpWkeKHgePMS2b.jpg'
+onmouseout='endm("tGoUTRFpWkeKHgePMS2b"); this.src="uploads/thumbs/tGoUTRFpWkeKHgePMS2b.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("tGoUTRFpWkeKHgePMS2b","uploads/thumbs/tGoUTRFpWkeKHgePMS2b.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-193-Grand-Prix-de-Paris-2009---Table-finale---Part-1">
+                Grand Prix de Paris 2009 - Table finale - Par...
+                </a></p>
+<p class="infos">L'Aviation Club France a organisé mai 2009 la 11ème saison du Grand Prix de Paris 2009. 138 joueurs en total à participer à ce tournoi; dont 6 finaliste - 5 Français et un Italien. Les voilà en fonction de leur stack:<br />
+<br />
+1. Jérôme Zerbib - 767.000 en jetons<br />
+2. Fabrizio Ricci - 660.000<br />
+3. Jan Boubli - 467.000<br />
+4. Nicolas Levi - 357.000<br />
+5. David Pêcheur - 330.000<br />
+6. Vikash Dhorasoo - 179.000 <br />
+<br />
+La Grande Finale a eu lieu le 17 mai 2009. Suivez les 10 parties de cette extraordinaire partie !</p>
+			
+<p class="infos">TAGS: Grand Prix de Paris, Aviation Club France, 2009, Nicolas Levi, Vikash Dhorasoo, Jérôme Zerbib, Jan Boubli, Fabrizio Ricci</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">539 vues, 0.00
+                / 5, 00:24:44</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/gKttnofl2dMuaArNxYYZ.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['gKttnofl2dMuaArNxYYZ']=0; pic['gKttnofl2dMuaArNxYYZ']=new Array(); pics['gKttnofl2dMuaArNxYYZ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-222-Champions-Invitational-WSOP-2009---Part-6'> <img id='gKttnofl2dMuaArNxYYZ' class=t width=180 height=130 src='uploads/thumbs/gKttnofl2dMuaArNxYYZ.jpg'
+onmouseout='endm("gKttnofl2dMuaArNxYYZ"); this.src="uploads/thumbs/gKttnofl2dMuaArNxYYZ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("gKttnofl2dMuaArNxYYZ","uploads/thumbs/gKttnofl2dMuaArNxYYZ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-222-Champions-Invitational-WSOP-2009---Part-6">
+                Champions Invitational WSOP 2009 - Part 6
+                </a></p>
+<p class="infos">Jim Bechtel est éliminé par Tom McEvoy, qui devient ainsi le chip leader. Bechtel finit en 4ème place. Le nombre de joueurs se restreint à 3: Tom McEvoy, Dan Harrington et Robert Varkonyi. Suivez les autres parties de la série pour voir le gagnant de la Corvette et du titre &quot;Champion des champions&quot; WSOP 2009.</p>
+			
+<p class="infos">TAGS: Champions Invitational WSOP 2009, Tom McEvoy,</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">814 vues, 0.00
+                / 5, 00:07:33</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/jfbwQzGTxmCZxpjiN1AE.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['jfbwQzGTxmCZxpjiN1AE']=0; pic['jfbwQzGTxmCZxpjiN1AE']=new Array(); pics['jfbwQzGTxmCZxpjiN1AE']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-156-Presentation-EPT-Monte-Carlo-2009'> <img id='jfbwQzGTxmCZxpjiN1AE' class=t width=180 height=130 src='uploads/thumbs/jfbwQzGTxmCZxpjiN1AE.jpg'
+onmouseout='endm("jfbwQzGTxmCZxpjiN1AE"); this.src="uploads/thumbs/jfbwQzGTxmCZxpjiN1AE.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("jfbwQzGTxmCZxpjiN1AE","uploads/thumbs/jfbwQzGTxmCZxpjiN1AE.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-156-Presentation-EPT-Monte-Carlo-2009">
+                Présentation EPT Monte Carlo 2009
+                </a></p>
+<p class="infos">L'événement principal EPT Monte Carlo 2009 s'est achevé. Fabrice Soulier fait un petit résumé de la compétition. Il se trouve au Monte Carlo Bay Hotel&amp;Resort avec Patrick Bruel et Nicolas Levi et ils commentent l'évolution des joueurs français.</p>
+			
+<p class="infos">TAGS: EPT Monte Carlo 2009, Fabrice Soulier, Patrick Bruel, Nicolas Levi</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">516 vues, 0.00
+                / 5, 00:02:48</p>
+</div>
+
+<hr />
+
+
+</p><p class="conteneur2">
+    <div class="box1">
+  <div onMouseOver="this.style.border='solid 2px #6fa797'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/SqXojPHOvxNeJRiPlWaU.jpg)" >
+    <div style="margin-left:-2px; margin-top:-2px" >
+      <script type='text/javascript'>
+stat['SqXojPHOvxNeJRiPlWaU']=0; pic['SqXojPHOvxNeJRiPlWaU']=new Array(); pics['SqXojPHOvxNeJRiPlWaU']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+    <a  href='http://www.poker5.tv/video-170-PPT-Nice-2009---Part-1'> <img id='SqXojPHOvxNeJRiPlWaU' class=t width=180 height=130 src='uploads/thumbs/SqXojPHOvxNeJRiPlWaU.jpg'
+onmouseout='endm("SqXojPHOvxNeJRiPlWaU"); this.src="uploads/thumbs/SqXojPHOvxNeJRiPlWaU.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("SqXojPHOvxNeJRiPlWaU","uploads/thumbs/SqXojPHOvxNeJRiPlWaU.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+  </div>
+</div>
+<div class="box2">
+<p class="titre"><a href="http://www.poker5.tv/video-170-PPT-Nice-2009---Part-1">
+                PPT Nice 2009 - Part 1
+                </a></p>
+<p class="infos">431 joueurs ont participé au quatrième Super Satellite PPT 2009, organisé à l'Hôtel Casino Le Palais de la Méditerranée de Nice. De grands noms ont y été présents, tels que Arnaud Mattern, Ludovic Lacay, Davidi Kittai, Roger Hairabedian, Rém y Biechel, François Tardieu, Eric Haik, Jean-Philippe Rohr, Raymond Domenech, Estelle Denis, Alain Roy, Antonin Teisseire et Stéphane Bazin. Suivez aussi la continuation de cette vidéo, &quot;PPT Nice 2009 - Part 2&quot; pour découvrir le gagnant.</p>
+			
+<p class="infos">TAGS: Partouche Poker Tour 2008</p>
+<p class="infos">Cat&eacute;gorie: <a href="category_home.php?cid=Tournois Poker">
+                  Tournois Poker
+                </a></p>
+<p class="infos">0
+                commentaires</p>
+				<p class="infos">792 vues, 0.00
+                / 5, 00:30:00</p>
+</div>
+
+<hr />
+
+
+</p>
+	<!-- Pagination start -->
+<div id="pagination">
+<ul>
+<li><a href="search.php?page=1&keyword=2009,&type=videos">1</a></li><li><a href="search.php?page=2&keyword=2009,&type=videos">2</a></li><li><a href="search.php?page=3&keyword=2009,&type=videos">3</a></li><li><a href="search.php?page=4&keyword=2009,&type=videos">4</a></li><li><a href="search.php?page=5&keyword=2009,&type=videos">5</a></li><li><a href="search.php?page=6&keyword=2009,&type=videos">6</a></li><li><a href="search.php?page=7&keyword=2009,&type=videos">7</a></li><li><a href="search.php?page=2&keyword=2009,&type=videos">Suivant >></a></li>
+</ul>
+</div>
+<!-- Pagination end -->	
+
+
+
+  
+    <div class="bas">
+<p class="bas">support[at]poker5.tv - <strong>copyright 2007 poker5.tv</strong> - <a href="rss.php"><img src="../images/feed-icon-14x14.png" width="14" height="14" border="0" align="absbottom"><br>
+  <a href="http://www.poker5.tv/last_com.php">commentaires</a> | <a href="http://www.poker5.tv/videos_poker.php">liste des  vid&eacute;os</a>  | <a href="http://www.poker5.tv/tags.php">tags</a> | <a href="http://www.poker5.tv/stats.php">stats</a> <a href="http://www.xiti.com/xiti.asp?s=360442" title="WebAnalytics">
+<script type="text/javascript">
+<!--
+Xt_param = 's=360442&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="80" height="15" border="0" alt="" ';
+Xt_i += 'src="http://logv3.xiti.com/g.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="80" height="15" src="http://logv3.xiti.com/g.xiti?s=360442&p=" alt="WebAnalytics" />
+</noscript></a>
+</p>
+  </div>
+</div>
+
+
+<div id="Layer2">
+<iframe align="center" name="nl" scrolling="no" marginwidth="0" marginheight="0" height="600" width="120" border="0" frameborder="0" src="http://www.poker5.tv/pub120600.php" style="border:0px;"></iframe>
+<br>
+<span class="intro">Poker5.tv vous recommande les sites suivants:<br>
+<a href="http://fr.virtuacasinos.com/">jeux casino</a><br>
+<a href="http://www.mescasinos.org">casino</a><br>
+<a href="http://www.poker-fr.org">poker en ligne</a><br>
+<a href="http://www.casinos-hits.com">casino en ligne</a><br>
+<a href=http://www.pokerligne.org/ target="_blank">poker en ligne</a><br>
+<a href="http://www.jeux-de-casinos.com/free.php" >Casino gratuit</a><br>
+<a href="http://www.guide-poker.eu">Jouer au poker</a><br>
+<a href="http://www.onlinepokerinfo.fr">Poker</a><br>
+<a href="http://poker.comprendrechoisir.com/comprendre/combinaison" title="Poker combinaison" target="_blank">Poker combinaison</a><br>
+<a href="http://paris-sportifs.comprendrechoisir.com/" title="Pari sportif" target="_blank">Pari sportif</a>
+</span>
+
+</div>
+</body>
+
+</html><div style="margin-left:auto; margin-right:auto; width:200px; height:20px; border:#999999 1px solid; line-height:15px; text-align:center; padding-left:5px; padding-right:5px; margin-top:15px; visibility:visible; background-color:#FFFFFF; clear:both">
+<a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Powered by PHPmotion -</a> <a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Free Video Script</a></div>

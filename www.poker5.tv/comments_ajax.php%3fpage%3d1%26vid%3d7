@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Posted by</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body topmargin="0" leftmargin="0">
+
+									<div align="center">
+
+									<table border="0" width="633" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table1" cellspacing="0">
+										<tr>
+											<td height="25" bgcolor="#fbf4fb" width="56%" class="default_text">
+											&nbsp;<b>Post&eacute; par: <font color="#333333"> <a href="memberprofile.php?uid=6">Jako</a></font></b></td>
+											<td height="25" bgcolor="#fbf4fb" width="16%" class="default_text">
+											&nbsp;05-10-08</td>
+											<td height="25" bgcolor="#fbf4fb" width="26%" class="text_normal">
+											&nbsp;<b><font color="#0033CC"><a href="emailcompose.php?uid=6">r&eacute;pondre</a></font> 
+											| 
+											<font color="#0033CC"> 
+											<a href="flag_comments.php?abuse=3">
+											reporter un abus</a></font></b></td>
+										</tr>
+										<tr>
+											<td height="25" colspan="3" class="default_text">
+											<span style="text-decoration: none">à lire absolument JOUEUR NE chez Sonatine. Une superbe histoire qui passionnera les passionnés et même ceux qui ne pratique pas... a  </span></td>
+										</tr>
+										<tr>
+											<td height="25" colspan="3" class="default_text">
+													<hr style="border: 1px dotted #E1E1E1" size="1" noshade>
+											</td>
+										</tr>
+									</table>
+									</div>
+							<table border="0" width="633" bordercolor="#CCCCCC" bgcolor="#FFFFFF" id="table55" cellpadding="0" cellspacing="0" align="left">
+								<tr>
+									<td height="25" bgcolor="#F4FAFF">
+							<table border="0" width="100%" bordercolor="#CCCCCC" style="border: 0px solid #C0CEEF; " id="table56" cellspacing="0">
+								<tr>
+				<td height="25" width="50%" bgcolor="#fbf4fb" class="default_text">
+					<p align="right">
+					<b>
+					Page 1 sur 1</b></td>
+				<td height="25" width="50%" bgcolor="#fbf4fb" class="text_normal">
+		&nbsp;&nbsp; <b>
+		<a href="#" onClick="javascript:ahahscript.ahah('comments_ajax.php?page=1&vid=7', 'commentsbox', '', 'GET', '', this);"></a><font color="#3366CC">&nbsp;</font> 
+		<a href="#" onClick="javascript:ahahscript.ahah('comments_ajax.php?page=1&vid=7', 'commentsbox', '', 'GET', '', this);">
+		</a></b>&nbsp;
+				</td>
+								</tr>
+							</table>
+						</div> <!-- end of comments div-->
+									</td>
+								</tr>
+							</table>
+							
+</body>
+
+</html>

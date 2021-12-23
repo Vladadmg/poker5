@@ -1,0 +1,1812 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Le tube du poker en ligne - Trucs et astuces avec Peter Eastgate</title>
+
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+	<script type='text/javascript' src='http://www.poker5.tv/thumbs.js'></script></script>
+
+<script language="javascript1.3" src="javascripts/ahah.js" ></script>
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+
+
+.flottante {
+background-color: #6fa797;
+margin: 2px;
+float: left;
+width: 131px;
+height: 20px;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+
+.flottante a{
+
+font-size:15px; 
+color:#ffffff;
+font-weight: bold;
+text-decoration:none;
+}
+.flottante a:hover{
+background-color:407163 ;
+text-decoration:underline;
+}
+
+.bas {
+
+margin: 2px;
+float: left;
+width: 100%;
+text-align: center;
+background-image:../images/tab.png;
+ 
+}
+
+.menu {
+width: 100%;
+}
+.spacer {
+clear: both;
+}
+
+
+#Layer1 {
+	position:absolute;
+	width:230px;
+	height:42px;
+	z-index:1;
+	left: 618px;
+	top: 41px;}
+
+
+#Layer2 {
+	position:absolute;
+	width:120px;
+	height:600px;
+	z-index:1;
+	left: 826px;
+	top: 79px;
+}
+
+
+
+
+
+
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font:normal 13px Arial;
+line-height:18px;
+z-index:100;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+color:#FFFFFF;
+border-bottom: 1px solid black;
+padding: 1px 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #182322;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="http://www.poker5.tv/seemore.php?load=bestnote">Les mieux notées</a>'
+menu1[1]='<a href="http://www.poker5.tv/seemore.php?load=viewed">Les plus vues</a>'
+menu1[2]='<a href="http://www.poker5.tv/seemore.php?load=featured">Les plus longues</a>'
+menu1[3]='<a href="http://www.poker5.tv/seemore.php?page=1&load=recent">Les plus récentes</a>'
+menu1[4]='<a href="http://www.poker5.tv/seemore.php?load=alpha">De A à Z</a>'
+
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='#6fa797'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+</head>
+<script type="text/javascript" src="swfobject.js"></script>
+<body>
+<div id="conteneur">
+  <a href="index.php"><img src="../images/poker5.jpg" alt="le poker en vidéo" border="0"></a>
+  
+
+  
+  <div id="Layer1"> 
+    <form method="POST" action="search.php">
+      
+              <input name="keyword" type="text" class="query" onFocus="if (this.value=='Vos mots clés'){this.value=''}" onBlur="if(this.value==''){this.value='Vos mots clés'}" value="Vos mots clés" size="20">
+              
+              <input type="hidden" name="type" value="videos" />
+              <input type="submit" value="GO!" name="B2"  >      
+  </form></div>
+  <div class="menu">
+<p class="flottante"><a href="index.php">Videos</a></p>
+<p class="flottante"><a href="seemore.php?load=viewed" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '150px')" onMouseout="delayhidemenu()">Les meilleures</a></p>
+<p class="flottante"><a href="category.php">Cat&eacute;gories</a></p>
+<p class="flottante"><a href="groups.php">Groupes</a></p>
+<p class="flottante"><a href="login.php">Inscription</a></p>
+<p class="flottante"><a href="myaccount.php"></a> <a href="login.php">
+          Connexion
+          </a></p>
+</div>
+
+ 
+
+<div>
+
+            
+
+
+
+</div>
+
+
+
+<hr />
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table border="0" width="100%" id="table61" style="border-style:solid; border-width:1px; " class="warning_box_green">
+      
+    </table></td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <table border="0" width="100%" id="table62" style="border-style:solid; "  class="warning_box_green_white">
+        
+      </table>
+    </div></td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <table border="0" width="100%" id="table63" class="warning_box_red">
+        
+      </table>
+    </div></td>
+  </tr>
+</table>
+<span class="titre_video_play">Vid&eacute;os similaires</span>
+<ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-218-Champions-Invitational-WSOP-2009---Part-2" title="Champions Invitational WSOP 2009 - Part 2">Champions Invitational WSOP 2009 - Part ...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/MVFQsR3IAGGERrehiMoO.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['MVFQsR3IAGGERrehiMoO']=0; pic['MVFQsR3IAGGERrehiMoO']=new Array(); pics['MVFQsR3IAGGERrehiMoO']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-218-Champions-Invitational-WSOP-2009---Part-2'> <img id='MVFQsR3IAGGERrehiMoO' class=t width=180 height=130 src='uploads/thumbs/MVFQsR3IAGGERrehiMoO.jpg'
+onmouseout='endm("MVFQsR3IAGGERrehiMoO"); this.src="uploads/thumbs/MVFQsR3IAGGERrehiMoO.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("MVFQsR3IAGGERrehiMoO","uploads/thumbs/MVFQsR3IAGGERrehiMoO.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:07:34</p>
+		<p class="vues">604 vues, 0.00
+                      / 5 </p>
+		<p class="vote">12-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-100-L-art-de-controler-ses-jetons" title="L'art de contrôler ses jetons">L'art de contrôler ses jetons</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/Nspfcow0aC2pDekyDQoE.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['Nspfcow0aC2pDekyDQoE']=0; pic['Nspfcow0aC2pDekyDQoE']=new Array(); pics['Nspfcow0aC2pDekyDQoE']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-100-L-art-de-controler-ses-jetons'> <img id='Nspfcow0aC2pDekyDQoE' class=t width=180 height=130 src='uploads/thumbs/Nspfcow0aC2pDekyDQoE.jpg'
+onmouseout='endm("Nspfcow0aC2pDekyDQoE"); this.src="uploads/thumbs/Nspfcow0aC2pDekyDQoE.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("Nspfcow0aC2pDekyDQoE","uploads/thumbs/Nspfcow0aC2pDekyDQoE.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:00:50</p>
+		<p class="vues">895 vues, 0.00
+                      / 5 </p>
+		<p class="vote">05-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-159-Table-finale-Aussie-Millions-2009---Part-7" title="Table finale Aussie Millions 2009 - Part 7">Table finale Aussie Millions 2009 - Part...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/BITpfMO4DzcFQtVp3xKL.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['BITpfMO4DzcFQtVp3xKL']=0; pic['BITpfMO4DzcFQtVp3xKL']=new Array(); pics['BITpfMO4DzcFQtVp3xKL']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-159-Table-finale-Aussie-Millions-2009---Part-7'> <img id='BITpfMO4DzcFQtVp3xKL' class=t width=180 height=130 src='uploads/thumbs/BITpfMO4DzcFQtVp3xKL.jpg'
+onmouseout='endm("BITpfMO4DzcFQtVp3xKL"); this.src="uploads/thumbs/BITpfMO4DzcFQtVp3xKL.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("BITpfMO4DzcFQtVp3xKL","uploads/thumbs/BITpfMO4DzcFQtVp3xKL.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:08:48</p>
+		<p class="vues">452 vues, 0.00
+                      / 5 </p>
+		<p class="vote">13-05-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-157-Table-finale-Aussie-Millions-2009---Part-9" title="Table finale Aussie Millions 2009 - Part 9">Table finale Aussie Millions 2009 - Part...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/NMUWUeJDFlRuRuyltECC.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['NMUWUeJDFlRuRuyltECC']=0; pic['NMUWUeJDFlRuRuyltECC']=new Array(); pics['NMUWUeJDFlRuRuyltECC']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-157-Table-finale-Aussie-Millions-2009---Part-9'> <img id='NMUWUeJDFlRuRuyltECC' class=t width=180 height=130 src='uploads/thumbs/NMUWUeJDFlRuRuyltECC.jpg'
+onmouseout='endm("NMUWUeJDFlRuRuyltECC"); this.src="uploads/thumbs/NMUWUeJDFlRuRuyltECC.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("NMUWUeJDFlRuRuyltECC","uploads/thumbs/NMUWUeJDFlRuRuyltECC.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:08:49</p>
+		<p class="vues">434 vues, 0.00
+                      / 5 </p>
+		<p class="vote">13-05-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-160-Table-finale-Aussie-Millions-2009---Part-6" title="Table finale Aussie Millions 2009 - Part 6">Table finale Aussie Millions 2009 - Part...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/LHW0LxdLweDQw4iKHKzJ.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['LHW0LxdLweDQw4iKHKzJ']=0; pic['LHW0LxdLweDQw4iKHKzJ']=new Array(); pics['LHW0LxdLweDQw4iKHKzJ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-160-Table-finale-Aussie-Millions-2009---Part-6'> <img id='LHW0LxdLweDQw4iKHKzJ' class=t width=180 height=130 src='uploads/thumbs/LHW0LxdLweDQw4iKHKzJ.jpg'
+onmouseout='endm("LHW0LxdLweDQw4iKHKzJ"); this.src="uploads/thumbs/LHW0LxdLweDQw4iKHKzJ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("LHW0LxdLweDQw4iKHKzJ","uploads/thumbs/LHW0LxdLweDQw4iKHKzJ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:08:46</p>
+		<p class="vues">443 vues, 0.00
+                      / 5 </p>
+		<p class="vote">13-05-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-158-Table-finale-Aussie-Millions-2009---Part-8" title="Table finale Aussie Millions 2009 - Part 8">Table finale Aussie Millions 2009 - Part...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/x2bLwZSGX2ZWzXzYS2UH.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['x2bLwZSGX2ZWzXzYS2UH']=0; pic['x2bLwZSGX2ZWzXzYS2UH']=new Array(); pics['x2bLwZSGX2ZWzXzYS2UH']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-158-Table-finale-Aussie-Millions-2009---Part-8'> <img id='x2bLwZSGX2ZWzXzYS2UH' class=t width=180 height=130 src='uploads/thumbs/x2bLwZSGX2ZWzXzYS2UH.jpg'
+onmouseout='endm("x2bLwZSGX2ZWzXzYS2UH"); this.src="uploads/thumbs/x2bLwZSGX2ZWzXzYS2UH.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("x2bLwZSGX2ZWzXzYS2UH","uploads/thumbs/x2bLwZSGX2ZWzXzYS2UH.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:08:46</p>
+		<p class="vues">435 vues, 0.00
+                      / 5 </p>
+		<p class="vote">13-05-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-162-Table-finale-Aussie-Millions-2009---Part-5" title="Table finale Aussie Millions 2009 - Part 5">Table finale Aussie Millions 2009 - Part...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/tUIHMoBhFhEwDIoqS1qk.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['tUIHMoBhFhEwDIoqS1qk']=0; pic['tUIHMoBhFhEwDIoqS1qk']=new Array(); pics['tUIHMoBhFhEwDIoqS1qk']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-162-Table-finale-Aussie-Millions-2009---Part-5'> <img id='tUIHMoBhFhEwDIoqS1qk' class=t width=180 height=130 src='uploads/thumbs/tUIHMoBhFhEwDIoqS1qk.jpg'
+onmouseout='endm("tUIHMoBhFhEwDIoqS1qk"); this.src="uploads/thumbs/tUIHMoBhFhEwDIoqS1qk.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("tUIHMoBhFhEwDIoqS1qk","uploads/thumbs/tUIHMoBhFhEwDIoqS1qk.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:08:49</p>
+		<p class="vues">447 vues, 0.00
+                      / 5 </p>
+		<p class="vote">14-05-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-97-WSOP-2008---emission-9" title="WSOP 2008 - émission 9">WSOP 2008 - émission 9</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/hWIpMlcEMbif13lAMHqy.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['hWIpMlcEMbif13lAMHqy']=0; pic['hWIpMlcEMbif13lAMHqy']=new Array(); pics['hWIpMlcEMbif13lAMHqy']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-97-WSOP-2008---emission-9'> <img id='hWIpMlcEMbif13lAMHqy' class=t width=180 height=130 src='uploads/thumbs/hWIpMlcEMbif13lAMHqy.jpg'
+onmouseout='endm("hWIpMlcEMbif13lAMHqy"); this.src="uploads/thumbs/hWIpMlcEMbif13lAMHqy.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("hWIpMlcEMbif13lAMHqy","uploads/thumbs/hWIpMlcEMbif13lAMHqy.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:23:50</p>
+		<p class="vues">944 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-12-08</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-129-WSOP-Europe---Part-1---Championnat-No-Limit-Texas-Hold-em" title="WSOP Europe - Part 1 - Championnat No Limit Texas Hold'em">WSOP Europe - Part 1 - Championnat No Li...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/z01pyZFbLXX3PbbyWLLW.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['z01pyZFbLXX3PbbyWLLW']=0; pic['z01pyZFbLXX3PbbyWLLW']=new Array(); pics['z01pyZFbLXX3PbbyWLLW']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-129-WSOP-Europe---Part-1---Championnat-No-Limit-Texas-Hold-em'> <img id='z01pyZFbLXX3PbbyWLLW' class=t width=180 height=130 src='uploads/thumbs/z01pyZFbLXX3PbbyWLLW.jpg'
+onmouseout='endm("z01pyZFbLXX3PbbyWLLW"); this.src="uploads/thumbs/z01pyZFbLXX3PbbyWLLW.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("z01pyZFbLXX3PbbyWLLW","uploads/thumbs/z01pyZFbLXX3PbbyWLLW.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:09:55</p>
+		<p class="vues">644 vues, 0.00
+                      / 5 </p>
+		<p class="vote">09-03-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-22-Las-Vegas-7-juillet-2007" title="Las Vegas 7 juillet 2007">Las Vegas 7 juillet 2007</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/Dt4ISkh3nJkcwRfW0qia.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['Dt4ISkh3nJkcwRfW0qia']=0; pic['Dt4ISkh3nJkcwRfW0qia']=new Array(); pics['Dt4ISkh3nJkcwRfW0qia']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-22-Las-Vegas-7-juillet-2007'> <img id='Dt4ISkh3nJkcwRfW0qia' class=t width=180 height=130 src='uploads/thumbs/Dt4ISkh3nJkcwRfW0qia.jpg'
+onmouseout='endm("Dt4ISkh3nJkcwRfW0qia"); this.src="uploads/thumbs/Dt4ISkh3nJkcwRfW0qia.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("Dt4ISkh3nJkcwRfW0qia","uploads/thumbs/Dt4ISkh3nJkcwRfW0qia.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:02:10</p>
+		<p class="vues">1183 vues, 0.00
+                      / 5 </p>
+		<p class="vote">11-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-65-Rencontre-de-Fabrice-Soulier-avec-Elky" title="Rencontre de Fabrice Soulier avec Elky">Rencontre de Fabrice Soulier avec Elky</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/54DVcaHbTWAgKpYu2SNG.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['54DVcaHbTWAgKpYu2SNG']=0; pic['54DVcaHbTWAgKpYu2SNG']=new Array(); pics['54DVcaHbTWAgKpYu2SNG']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-65-Rencontre-de-Fabrice-Soulier-avec-Elky'> <img id='54DVcaHbTWAgKpYu2SNG' class=t width=180 height=130 src='uploads/thumbs/54DVcaHbTWAgKpYu2SNG.jpg'
+onmouseout='endm("54DVcaHbTWAgKpYu2SNG"); this.src="uploads/thumbs/54DVcaHbTWAgKpYu2SNG.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("54DVcaHbTWAgKpYu2SNG","uploads/thumbs/54DVcaHbTWAgKpYu2SNG.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:06:02</p>
+		<p class="vues">813 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-208-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-1" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 1">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/AjZaNYcmZhOfOMi3KJES.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['AjZaNYcmZhOfOMi3KJES']=0; pic['AjZaNYcmZhOfOMi3KJES']=new Array(); pics['AjZaNYcmZhOfOMi3KJES']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-208-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-1'> <img id='AjZaNYcmZhOfOMi3KJES' class=t width=180 height=130 src='uploads/thumbs/AjZaNYcmZhOfOMi3KJES.jpg'
+onmouseout='endm("AjZaNYcmZhOfOMi3KJES"); this.src="uploads/thumbs/AjZaNYcmZhOfOMi3KJES.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("AjZaNYcmZhOfOMi3KJES","uploads/thumbs/AjZaNYcmZhOfOMi3KJES.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:39</p>
+		<p class="vues">571 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-92-WSOP-2008---emission-6" title="WSOP 2008 - émission 6">WSOP 2008 - émission 6</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/CfSUnwlmhSDtAlLoZdax.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['CfSUnwlmhSDtAlLoZdax']=0; pic['CfSUnwlmhSDtAlLoZdax']=new Array(); pics['CfSUnwlmhSDtAlLoZdax']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-92-WSOP-2008---emission-6'> <img id='CfSUnwlmhSDtAlLoZdax' class=t width=180 height=130 src='uploads/thumbs/CfSUnwlmhSDtAlLoZdax.jpg'
+onmouseout='endm("CfSUnwlmhSDtAlLoZdax"); this.src="uploads/thumbs/CfSUnwlmhSDtAlLoZdax.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("CfSUnwlmhSDtAlLoZdax","uploads/thumbs/CfSUnwlmhSDtAlLoZdax.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:22:23</p>
+		<p class="vues">874 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-89-WSOP-2008---emission-3" title="WSOP 2008 - émission 3">WSOP 2008 - émission 3</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/MHlN5lmRziGeYbnrNAVQ.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['MHlN5lmRziGeYbnrNAVQ']=0; pic['MHlN5lmRziGeYbnrNAVQ']=new Array(); pics['MHlN5lmRziGeYbnrNAVQ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-89-WSOP-2008---emission-3'> <img id='MHlN5lmRziGeYbnrNAVQ' class=t width=180 height=130 src='uploads/thumbs/MHlN5lmRziGeYbnrNAVQ.jpg'
+onmouseout='endm("MHlN5lmRziGeYbnrNAVQ"); this.src="uploads/thumbs/MHlN5lmRziGeYbnrNAVQ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("MHlN5lmRziGeYbnrNAVQ","uploads/thumbs/MHlN5lmRziGeYbnrNAVQ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:22:49</p>
+		<p class="vues">808 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-113-WPT----continuation-1ere-partie" title="WPT  - continuation 1ère partie">WPT  - continuation 1ère partie</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/GwWUUErgkQlkcDgIxmOB.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['GwWUUErgkQlkcDgIxmOB']=0; pic['GwWUUErgkQlkcDgIxmOB']=new Array(); pics['GwWUUErgkQlkcDgIxmOB']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-113-WPT----continuation-1ere-partie'> <img id='GwWUUErgkQlkcDgIxmOB' class=t width=180 height=130 src='uploads/thumbs/GwWUUErgkQlkcDgIxmOB.jpg'
+onmouseout='endm("GwWUUErgkQlkcDgIxmOB"); this.src="uploads/thumbs/GwWUUErgkQlkcDgIxmOB.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("GwWUUErgkQlkcDgIxmOB","uploads/thumbs/GwWUUErgkQlkcDgIxmOB.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:18:19</p>
+		<p class="vues">792 vues, 0.00
+                      / 5 </p>
+		<p class="vote">22-01-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-76-Poker-WSOP-Anthony-Lellouche-et-Fabrice-Soulier" title="Poker WSOP: Anthony Lellouche et Fabrice Soulier">Poker WSOP: Anthony Lellouche et Fabrice...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/VI43hc1PhzrIQlyQDZHc.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['VI43hc1PhzrIQlyQDZHc']=0; pic['VI43hc1PhzrIQlyQDZHc']=new Array(); pics['VI43hc1PhzrIQlyQDZHc']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-76-Poker-WSOP-Anthony-Lellouche-et-Fabrice-Soulier'> <img id='VI43hc1PhzrIQlyQDZHc' class=t width=180 height=130 src='uploads/thumbs/VI43hc1PhzrIQlyQDZHc.jpg'
+onmouseout='endm("VI43hc1PhzrIQlyQDZHc"); this.src="uploads/thumbs/VI43hc1PhzrIQlyQDZHc.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("VI43hc1PhzrIQlyQDZHc","uploads/thumbs/VI43hc1PhzrIQlyQDZHc.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:03:05</p>
+		<p class="vues">997 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-21-Poker-WSOP-2007" title="Poker WSOP 2007">Poker WSOP 2007</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/lVt4Gw2jcC5MtOWpqsKS.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['lVt4Gw2jcC5MtOWpqsKS']=0; pic['lVt4Gw2jcC5MtOWpqsKS']=new Array(); pics['lVt4Gw2jcC5MtOWpqsKS']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-21-Poker-WSOP-2007'> <img id='lVt4Gw2jcC5MtOWpqsKS' class=t width=180 height=130 src='uploads/thumbs/lVt4Gw2jcC5MtOWpqsKS.jpg'
+onmouseout='endm("lVt4Gw2jcC5MtOWpqsKS"); this.src="uploads/thumbs/lVt4Gw2jcC5MtOWpqsKS.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("lVt4Gw2jcC5MtOWpqsKS","uploads/thumbs/lVt4Gw2jcC5MtOWpqsKS.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:01:30</p>
+		<p class="vues">1138 vues, 0.00
+                      / 5 </p>
+		<p class="vote">11-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-207-WSOP-2009---interviews-joueurs-Landbrokes" title="WSOP 2009 - interviews joueurs Landbrokes">WSOP 2009 - interviews joueurs Landbroke...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/tQwCqb5eaLMdi2UyREcj.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['tQwCqb5eaLMdi2UyREcj']=0; pic['tQwCqb5eaLMdi2UyREcj']=new Array(); pics['tQwCqb5eaLMdi2UyREcj']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-207-WSOP-2009---interviews-joueurs-Landbrokes'> <img id='tQwCqb5eaLMdi2UyREcj' class=t width=180 height=130 src='uploads/thumbs/tQwCqb5eaLMdi2UyREcj.jpg'
+onmouseout='endm("tQwCqb5eaLMdi2UyREcj"); this.src="uploads/thumbs/tQwCqb5eaLMdi2UyREcj.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("tQwCqb5eaLMdi2UyREcj","uploads/thumbs/tQwCqb5eaLMdi2UyREcj.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:05:50</p>
+		<p class="vues">399 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-96-WSOP-2008---emission-8" title="WSOP 2008 - émission 8">WSOP 2008 - émission 8</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/o1j42vacTERPoQBFvQqr.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['o1j42vacTERPoQBFvQqr']=0; pic['o1j42vacTERPoQBFvQqr']=new Array(); pics['o1j42vacTERPoQBFvQqr']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-96-WSOP-2008---emission-8'> <img id='o1j42vacTERPoQBFvQqr' class=t width=180 height=130 src='uploads/thumbs/o1j42vacTERPoQBFvQqr.jpg'
+onmouseout='endm("o1j42vacTERPoQBFvQqr"); this.src="uploads/thumbs/o1j42vacTERPoQBFvQqr.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("o1j42vacTERPoQBFvQqr","uploads/thumbs/o1j42vacTERPoQBFvQqr.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:23:22</p>
+		<p class="vues">878 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-109-WPT----1ere-partie" title="WPT  - 1ère partie">WPT  - 1ère partie</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/eYdV4YzGP5xDSSCuPQ0P.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['eYdV4YzGP5xDSSCuPQ0P']=0; pic['eYdV4YzGP5xDSSCuPQ0P']=new Array(); pics['eYdV4YzGP5xDSSCuPQ0P']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-109-WPT----1ere-partie'> <img id='eYdV4YzGP5xDSSCuPQ0P' class=t width=180 height=130 src='uploads/thumbs/eYdV4YzGP5xDSSCuPQ0P.jpg'
+onmouseout='endm("eYdV4YzGP5xDSSCuPQ0P"); this.src="uploads/thumbs/eYdV4YzGP5xDSSCuPQ0P.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("eYdV4YzGP5xDSSCuPQ0P","uploads/thumbs/eYdV4YzGP5xDSSCuPQ0P.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:18:19</p>
+		<p class="vues">770 vues, 0.00
+                      / 5 </p>
+		<p class="vote">22-01-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-216-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-9" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 9">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/CKLFOGKRVgEOBHpvB0XQ.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['CKLFOGKRVgEOBHpvB0XQ']=0; pic['CKLFOGKRVgEOBHpvB0XQ']=new Array(); pics['CKLFOGKRVgEOBHpvB0XQ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-216-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-9'> <img id='CKLFOGKRVgEOBHpvB0XQ' class=t width=180 height=130 src='uploads/thumbs/CKLFOGKRVgEOBHpvB0XQ.jpg'
+onmouseout='endm("CKLFOGKRVgEOBHpvB0XQ"); this.src="uploads/thumbs/CKLFOGKRVgEOBHpvB0XQ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("CKLFOGKRVgEOBHpvB0XQ","uploads/thumbs/CKLFOGKRVgEOBHpvB0XQ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:07:45</p>
+		<p class="vues">551 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-26-Manipulation-de-cartes-a-Las-Vegas" title="Manipulation de cartes à Las Vegas">Manipulation de cartes à Las Vegas</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/bLYH0OoqXztPurAyuLrT.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['bLYH0OoqXztPurAyuLrT']=0; pic['bLYH0OoqXztPurAyuLrT']=new Array(); pics['bLYH0OoqXztPurAyuLrT']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-26-Manipulation-de-cartes-a-Las-Vegas'> <img id='bLYH0OoqXztPurAyuLrT' class=t width=180 height=130 src='uploads/thumbs/bLYH0OoqXztPurAyuLrT.jpg'
+onmouseout='endm("bLYH0OoqXztPurAyuLrT"); this.src="uploads/thumbs/bLYH0OoqXztPurAyuLrT.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("bLYH0OoqXztPurAyuLrT","uploads/thumbs/bLYH0OoqXztPurAyuLrT.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:05:36</p>
+		<p class="vues">1077 vues, 0.00
+                      / 5 </p>
+		<p class="vote">18-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-150-L-equipe-PokerStars-Pro---Gavin-Griffin" title="L'équipe PokerStars Pro - Gavin Griffin">L'équipe PokerStars Pro - Gavin Griffin</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/itCeG4reAswGR2gcIBMn.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['itCeG4reAswGR2gcIBMn']=0; pic['itCeG4reAswGR2gcIBMn']=new Array(); pics['itCeG4reAswGR2gcIBMn']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-150-L-equipe-PokerStars-Pro---Gavin-Griffin'> <img id='itCeG4reAswGR2gcIBMn' class=t width=180 height=130 src='uploads/thumbs/itCeG4reAswGR2gcIBMn.jpg'
+onmouseout='endm("itCeG4reAswGR2gcIBMn"); this.src="uploads/thumbs/itCeG4reAswGR2gcIBMn.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("itCeG4reAswGR2gcIBMn","uploads/thumbs/itCeG4reAswGR2gcIBMn.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:02:53</p>
+		<p class="vues">635 vues, 0.00
+                      / 5 </p>
+		<p class="vote">29-04-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-182-Elky-aux-WSOP-2009" title="Elky aux WSOP 2009">Elky aux WSOP 2009</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/yUc5esbZBJavBKXlpZB5.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['yUc5esbZBJavBKXlpZB5']=0; pic['yUc5esbZBJavBKXlpZB5']=new Array(); pics['yUc5esbZBJavBKXlpZB5']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-182-Elky-aux-WSOP-2009'> <img id='yUc5esbZBJavBKXlpZB5' class=t width=180 height=130 src='uploads/thumbs/yUc5esbZBJavBKXlpZB5.jpg'
+onmouseout='endm("yUc5esbZBJavBKXlpZB5"); this.src="uploads/thumbs/yUc5esbZBJavBKXlpZB5.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("yUc5esbZBJavBKXlpZB5","uploads/thumbs/yUc5esbZBJavBKXlpZB5.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:03:59</p>
+		<p class="vues">492 vues, 0.00
+                      / 5 </p>
+		<p class="vote">21-07-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-81-WSOP-2008---emission-10" title="WSOP 2008 - émission 10">WSOP 2008 - émission 10</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/neTwoH0pUTUIEAtxwIBg.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['neTwoH0pUTUIEAtxwIBg']=0; pic['neTwoH0pUTUIEAtxwIBg']=new Array(); pics['neTwoH0pUTUIEAtxwIBg']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-81-WSOP-2008---emission-10'> <img id='neTwoH0pUTUIEAtxwIBg' class=t width=180 height=130 src='uploads/thumbs/neTwoH0pUTUIEAtxwIBg.jpg'
+onmouseout='endm("neTwoH0pUTUIEAtxwIBg"); this.src="uploads/thumbs/neTwoH0pUTUIEAtxwIBg.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("neTwoH0pUTUIEAtxwIBg","uploads/thumbs/neTwoH0pUTUIEAtxwIBg.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:23:39</p>
+		<p class="vues">1144 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-9-Trailer-du-jeu-«-High-Stakes-Vegas-Strip--Poker-Edition-»" title="Trailer du jeu « High Stakes Vegas Strip : Poker Edition »">Trailer du jeu « High Stakes Vegas Strip...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/bGg1VgmwrrRXoIuPwIwB.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['bGg1VgmwrrRXoIuPwIwB']=0; pic['bGg1VgmwrrRXoIuPwIwB']=new Array(); pics['bGg1VgmwrrRXoIuPwIwB']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-9-Trailer-du-jeu-«-High-Stakes-Vegas-Strip--Poker-Edition-»'> <img id='bGg1VgmwrrRXoIuPwIwB' class=t width=180 height=130 src='uploads/thumbs/bGg1VgmwrrRXoIuPwIwB.jpg'
+onmouseout='endm("bGg1VgmwrrRXoIuPwIwB"); this.src="uploads/thumbs/bGg1VgmwrrRXoIuPwIwB.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("bGg1VgmwrrRXoIuPwIwB","uploads/thumbs/bGg1VgmwrrRXoIuPwIwB.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:01:16</p>
+		<p class="vues">1957 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-214-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-7" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 7">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/BM5KZRCOiWwR1pQdobYq.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['BM5KZRCOiWwR1pQdobYq']=0; pic['BM5KZRCOiWwR1pQdobYq']=new Array(); pics['BM5KZRCOiWwR1pQdobYq']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-214-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-7'> <img id='BM5KZRCOiWwR1pQdobYq' class=t width=180 height=130 src='uploads/thumbs/BM5KZRCOiWwR1pQdobYq.jpg'
+onmouseout='endm("BM5KZRCOiWwR1pQdobYq"); this.src="uploads/thumbs/BM5KZRCOiWwR1pQdobYq.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("BM5KZRCOiWwR1pQdobYq","uploads/thumbs/BM5KZRCOiWwR1pQdobYq.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:41</p>
+		<p class="vues">557 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-215-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-8" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 8">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/NNMqWWbVV1nmVDs43YxZ.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['NNMqWWbVV1nmVDs43YxZ']=0; pic['NNMqWWbVV1nmVDs43YxZ']=new Array(); pics['NNMqWWbVV1nmVDs43YxZ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-215-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-8'> <img id='NNMqWWbVV1nmVDs43YxZ' class=t width=180 height=130 src='uploads/thumbs/NNMqWWbVV1nmVDs43YxZ.jpg'
+onmouseout='endm("NNMqWWbVV1nmVDs43YxZ"); this.src="uploads/thumbs/NNMqWWbVV1nmVDs43YxZ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("NNMqWWbVV1nmVDs43YxZ","uploads/thumbs/NNMqWWbVV1nmVDs43YxZ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:41</p>
+		<p class="vues">530 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-210-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-3" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 3">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/afUamD5lkcdiRA2QcPWx.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['afUamD5lkcdiRA2QcPWx']=0; pic['afUamD5lkcdiRA2QcPWx']=new Array(); pics['afUamD5lkcdiRA2QcPWx']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-210-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-3'> <img id='afUamD5lkcdiRA2QcPWx' class=t width=180 height=130 src='uploads/thumbs/afUamD5lkcdiRA2QcPWx.jpg'
+onmouseout='endm("afUamD5lkcdiRA2QcPWx"); this.src="uploads/thumbs/afUamD5lkcdiRA2QcPWx.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("afUamD5lkcdiRA2QcPWx","uploads/thumbs/afUamD5lkcdiRA2QcPWx.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:07:46</p>
+		<p class="vues">542 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-183--Elky--s-entraine-avec-Dewey--Black-Cobra--Cooper" title="&quot;Elky&quot; s'entraîne avec Dewey &quot;Black Cobra&quot; Cooper">&quot;Elky&quot; s'entraîne avec Dewey &quot;Black Cobr...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/CaPdnfLyfUWfWJTCLmIY.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['CaPdnfLyfUWfWJTCLmIY']=0; pic['CaPdnfLyfUWfWJTCLmIY']=new Array(); pics['CaPdnfLyfUWfWJTCLmIY']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-183--Elky--s-entraine-avec-Dewey--Black-Cobra--Cooper'> <img id='CaPdnfLyfUWfWJTCLmIY' class=t width=180 height=130 src='uploads/thumbs/CaPdnfLyfUWfWJTCLmIY.jpg'
+onmouseout='endm("CaPdnfLyfUWfWJTCLmIY"); this.src="uploads/thumbs/CaPdnfLyfUWfWJTCLmIY.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("CaPdnfLyfUWfWJTCLmIY","uploads/thumbs/CaPdnfLyfUWfWJTCLmIY.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:04:12</p>
+		<p class="vues">437 vues, 0.00
+                      / 5 </p>
+		<p class="vote">21-07-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-213-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-6" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 6">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/ngnpgJbrrOQOfySztW1M.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['ngnpgJbrrOQOfySztW1M']=0; pic['ngnpgJbrrOQOfySztW1M']=new Array(); pics['ngnpgJbrrOQOfySztW1M']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-213-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-6'> <img id='ngnpgJbrrOQOfySztW1M' class=t width=180 height=130 src='uploads/thumbs/ngnpgJbrrOQOfySztW1M.jpg'
+onmouseout='endm("ngnpgJbrrOQOfySztW1M"); this.src="uploads/thumbs/ngnpgJbrrOQOfySztW1M.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("ngnpgJbrrOQOfySztW1M","uploads/thumbs/ngnpgJbrrOQOfySztW1M.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:39</p>
+		<p class="vues">540 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-136-Chris-Moneymaker---son-chemin-vers-le-championnat-mondial" title="Chris Moneymaker - son chemin vers le championnat mondial">Chris Moneymaker - son chemin vers le ch...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/AahBJ4aIhOJaMXJmB4Eb.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['AahBJ4aIhOJaMXJmB4Eb']=0; pic['AahBJ4aIhOJaMXJmB4Eb']=new Array(); pics['AahBJ4aIhOJaMXJmB4Eb']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-136-Chris-Moneymaker---son-chemin-vers-le-championnat-mondial'> <img id='AahBJ4aIhOJaMXJmB4Eb' class=t width=180 height=130 src='uploads/thumbs/AahBJ4aIhOJaMXJmB4Eb.jpg'
+onmouseout='endm("AahBJ4aIhOJaMXJmB4Eb"); this.src="uploads/thumbs/AahBJ4aIhOJaMXJmB4Eb.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("AahBJ4aIhOJaMXJmB4Eb","uploads/thumbs/AahBJ4aIhOJaMXJmB4Eb.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:04:26</p>
+		<p class="vues">522 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-04-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-212-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-5" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 5">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/PPVUWuZxKM2FhUFTtjIE.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['PPVUWuZxKM2FhUFTtjIE']=0; pic['PPVUWuZxKM2FhUFTtjIE']=new Array(); pics['PPVUWuZxKM2FhUFTtjIE']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-212-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-5'> <img id='PPVUWuZxKM2FhUFTtjIE' class=t width=180 height=130 src='uploads/thumbs/PPVUWuZxKM2FhUFTtjIE.jpg'
+onmouseout='endm("PPVUWuZxKM2FhUFTtjIE"); this.src="uploads/thumbs/PPVUWuZxKM2FhUFTtjIE.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("PPVUWuZxKM2FhUFTtjIE","uploads/thumbs/PPVUWuZxKM2FhUFTtjIE.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:07:41</p>
+		<p class="vues">582 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-80-WPT--Doyle-Brunson-Classic--Las-Vegas-decembre-2007" title="WPT &quot;Doyle Brunson Classic&quot; Las Vegas décembre 2007">WPT &quot;Doyle Brunson Classic&quot; Las Vegas dé...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/nSpruPYaExsT4vFBXipG.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['nSpruPYaExsT4vFBXipG']=0; pic['nSpruPYaExsT4vFBXipG']=new Array(); pics['nSpruPYaExsT4vFBXipG']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-80-WPT--Doyle-Brunson-Classic--Las-Vegas-decembre-2007'> <img id='nSpruPYaExsT4vFBXipG' class=t width=180 height=130 src='uploads/thumbs/nSpruPYaExsT4vFBXipG.jpg'
+onmouseout='endm("nSpruPYaExsT4vFBXipG"); this.src="uploads/thumbs/nSpruPYaExsT4vFBXipG.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("nSpruPYaExsT4vFBXipG","uploads/thumbs/nSpruPYaExsT4vFBXipG.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:03:31</p>
+		<p class="vues">949 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-103-Interview-de-Brahim-Asloum" title="Interview de Brahim Asloum">Interview de Brahim Asloum</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/vcu1wXngsd3LLcUxsRUu.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['vcu1wXngsd3LLcUxsRUu']=0; pic['vcu1wXngsd3LLcUxsRUu']=new Array(); pics['vcu1wXngsd3LLcUxsRUu']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-103-Interview-de-Brahim-Asloum'> <img id='vcu1wXngsd3LLcUxsRUu' class=t width=180 height=130 src='uploads/thumbs/vcu1wXngsd3LLcUxsRUu.jpg'
+onmouseout='endm("vcu1wXngsd3LLcUxsRUu"); this.src="uploads/thumbs/vcu1wXngsd3LLcUxsRUu.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("vcu1wXngsd3LLcUxsRUu","uploads/thumbs/vcu1wXngsd3LLcUxsRUu.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:04:29</p>
+		<p class="vues">995 vues, 0.00
+                      / 5 </p>
+		<p class="vote">05-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-209-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-2" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 2">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/xLySk1OSENOqWgcR0mvK.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['xLySk1OSENOqWgcR0mvK']=0; pic['xLySk1OSENOqWgcR0mvK']=new Array(); pics['xLySk1OSENOqWgcR0mvK']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-209-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-2'> <img id='xLySk1OSENOqWgcR0mvK' class=t width=180 height=130 src='uploads/thumbs/xLySk1OSENOqWgcR0mvK.jpg'
+onmouseout='endm("xLySk1OSENOqWgcR0mvK"); this.src="uploads/thumbs/xLySk1OSENOqWgcR0mvK.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("xLySk1OSENOqWgcR0mvK","uploads/thumbs/xLySk1OSENOqWgcR0mvK.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:41</p>
+		<p class="vues">602 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-2-Le-coup-de-bluff-de-Varkonyi" title="Le coup de bluff de Varkonyi">Le coup de bluff de Varkonyi</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/QH4HIxDF0zwppiVp4qM0.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['QH4HIxDF0zwppiVp4qM0']=0; pic['QH4HIxDF0zwppiVp4qM0']=new Array(); pics['QH4HIxDF0zwppiVp4qM0']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-2-Le-coup-de-bluff-de-Varkonyi'> <img id='QH4HIxDF0zwppiVp4qM0' class=t width=180 height=130 src='uploads/thumbs/QH4HIxDF0zwppiVp4qM0.jpg'
+onmouseout='endm("QH4HIxDF0zwppiVp4qM0"); this.src="uploads/thumbs/QH4HIxDF0zwppiVp4qM0.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("QH4HIxDF0zwppiVp4qM0","uploads/thumbs/QH4HIxDF0zwppiVp4qM0.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:01:49</p>
+		<p class="vues">1023 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-211-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-4" title="WSOP 2009 - 40.000$ No-Limit Hold'em Championship - Part 4">WSOP 2009 - 40.000$ No-Limit Hold'em Cha...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/EUDqjnmDtvwouf5N03fX.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['EUDqjnmDtvwouf5N03fX']=0; pic['EUDqjnmDtvwouf5N03fX']=new Array(); pics['EUDqjnmDtvwouf5N03fX']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-211-WSOP-2009---40000$-No-Limit-Hold-em-Championship---Part-4'> <img id='EUDqjnmDtvwouf5N03fX' class=t width=180 height=130 src='uploads/thumbs/EUDqjnmDtvwouf5N03fX.jpg'
+onmouseout='endm("EUDqjnmDtvwouf5N03fX"); this.src="uploads/thumbs/EUDqjnmDtvwouf5N03fX.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("EUDqjnmDtvwouf5N03fX","uploads/thumbs/EUDqjnmDtvwouf5N03fX.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:40</p>
+		<p class="vues">563 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-135-Daniel-Negreanu-et-son-histoire" title="Daniel Negreanu et son histoire">Daniel Negreanu et son histoire</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/PHO5OaEQkmONadgzB0ks.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['PHO5OaEQkmONadgzB0ks']=0; pic['PHO5OaEQkmONadgzB0ks']=new Array(); pics['PHO5OaEQkmONadgzB0ks']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-135-Daniel-Negreanu-et-son-histoire'> <img id='PHO5OaEQkmONadgzB0ks' class=t width=180 height=130 src='uploads/thumbs/PHO5OaEQkmONadgzB0ks.jpg'
+onmouseout='endm("PHO5OaEQkmONadgzB0ks"); this.src="uploads/thumbs/PHO5OaEQkmONadgzB0ks.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("PHO5OaEQkmONadgzB0ks","uploads/thumbs/PHO5OaEQkmONadgzB0ks.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:02:42</p>
+		<p class="vues">562 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-04-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-219-Champions-Invitational-WSOP-2009---Part-3" title="Champions Invitational WSOP 2009 - Part 3">Champions Invitational WSOP 2009 - Part ...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/yMslIX4rlnxr2cXMbuI5.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['yMslIX4rlnxr2cXMbuI5']=0; pic['yMslIX4rlnxr2cXMbuI5']=new Array(); pics['yMslIX4rlnxr2cXMbuI5']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-219-Champions-Invitational-WSOP-2009---Part-3'> <img id='yMslIX4rlnxr2cXMbuI5' class=t width=180 height=130 src='uploads/thumbs/yMslIX4rlnxr2cXMbuI5.jpg'
+onmouseout='endm("yMslIX4rlnxr2cXMbuI5"); this.src="uploads/thumbs/yMslIX4rlnxr2cXMbuI5.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("yMslIX4rlnxr2cXMbuI5","uploads/thumbs/yMslIX4rlnxr2cXMbuI5.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:33</p>
+		<p class="vues">685 vues, 0.00
+                      / 5 </p>
+		<p class="vote">12-08-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-205-Series-Mondiales-du-Poker-2009---les-coulisses" title="Séries Mondiales du Poker 2009 - les coulisses">Séries Mondiales du Poker 2009 - les cou...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/g4ThjgQVczFiFMsQIxrN.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['g4ThjgQVczFiFMsQIxrN']=0; pic['g4ThjgQVczFiFMsQIxrN']=new Array(); pics['g4ThjgQVczFiFMsQIxrN']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-205-Series-Mondiales-du-Poker-2009---les-coulisses'> <img id='g4ThjgQVczFiFMsQIxrN' class=t width=180 height=130 src='uploads/thumbs/g4ThjgQVczFiFMsQIxrN.jpg'
+onmouseout='endm("g4ThjgQVczFiFMsQIxrN"); this.src="uploads/thumbs/g4ThjgQVczFiFMsQIxrN.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("g4ThjgQVczFiFMsQIxrN","uploads/thumbs/g4ThjgQVczFiFMsQIxrN.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:01:49</p>
+		<p class="vues">426 vues, 0.00
+                      / 5 </p>
+		<p class="vote">30-07-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-104-Le-tour-des-WSOPE" title="Le tour des WSOPE">Le tour des WSOPE</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/mcrfcGPGtrj0aygeSt1i.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['mcrfcGPGtrj0aygeSt1i']=0; pic['mcrfcGPGtrj0aygeSt1i']=new Array(); pics['mcrfcGPGtrj0aygeSt1i']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-104-Le-tour-des-WSOPE'> <img id='mcrfcGPGtrj0aygeSt1i' class=t width=180 height=130 src='uploads/thumbs/mcrfcGPGtrj0aygeSt1i.jpg'
+onmouseout='endm("mcrfcGPGtrj0aygeSt1i"); this.src="uploads/thumbs/mcrfcGPGtrj0aygeSt1i.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("mcrfcGPGtrj0aygeSt1i","uploads/thumbs/mcrfcGPGtrj0aygeSt1i.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:06:06</p>
+		<p class="vues">752 vues, 0.00
+                      / 5 </p>
+		<p class="vote">05-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-110-WPT---2eme-partie" title="WPT - 2ème partie">WPT - 2ème partie</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/PsbA1o0hQuogqyo4B1iO.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['PsbA1o0hQuogqyo4B1iO']=0; pic['PsbA1o0hQuogqyo4B1iO']=new Array(); pics['PsbA1o0hQuogqyo4B1iO']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-110-WPT---2eme-partie'> <img id='PsbA1o0hQuogqyo4B1iO' class=t width=180 height=130 src='uploads/thumbs/PsbA1o0hQuogqyo4B1iO.jpg'
+onmouseout='endm("PsbA1o0hQuogqyo4B1iO"); this.src="uploads/thumbs/PsbA1o0hQuogqyo4B1iO.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("PsbA1o0hQuogqyo4B1iO","uploads/thumbs/PsbA1o0hQuogqyo4B1iO.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:18:00</p>
+		<p class="vues">685 vues, 0.00
+                      / 5 </p>
+		<p class="vote">22-01-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-85-Interview-surprise-avec-Patrick-Bruel" title="Interview surprise avec Patrick Bruel">Interview surprise avec Patrick Bruel</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/If2GI0SQWNwlqK0ZwrFo.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['If2GI0SQWNwlqK0ZwrFo']=0; pic['If2GI0SQWNwlqK0ZwrFo']=new Array(); pics['If2GI0SQWNwlqK0ZwrFo']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-85-Interview-surprise-avec-Patrick-Bruel'> <img id='If2GI0SQWNwlqK0ZwrFo' class=t width=180 height=130 src='uploads/thumbs/If2GI0SQWNwlqK0ZwrFo.jpg'
+onmouseout='endm("If2GI0SQWNwlqK0ZwrFo"); this.src="uploads/thumbs/If2GI0SQWNwlqK0ZwrFo.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("If2GI0SQWNwlqK0ZwrFo","uploads/thumbs/If2GI0SQWNwlqK0ZwrFo.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:02:48</p>
+		<p class="vues">1478 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-63-Fete-avec-Patrick-Bruel-Bruno-Fitoussi-et-Fabrice-Soulier" title="Fête avec Patrick Bruel, Bruno Fitoussi et Fabrice Soulier">Fête avec Patrick Bruel, Bruno Fitoussi ...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/kHNOTvePyRtTgfd1mLBJ.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['kHNOTvePyRtTgfd1mLBJ']=0; pic['kHNOTvePyRtTgfd1mLBJ']=new Array(); pics['kHNOTvePyRtTgfd1mLBJ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-63-Fete-avec-Patrick-Bruel-Bruno-Fitoussi-et-Fabrice-Soulier'> <img id='kHNOTvePyRtTgfd1mLBJ' class=t width=180 height=130 src='uploads/thumbs/kHNOTvePyRtTgfd1mLBJ.jpg'
+onmouseout='endm("kHNOTvePyRtTgfd1mLBJ"); this.src="uploads/thumbs/kHNOTvePyRtTgfd1mLBJ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("kHNOTvePyRtTgfd1mLBJ","uploads/thumbs/kHNOTvePyRtTgfd1mLBJ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:04:35</p>
+		<p class="vues">946 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-91-WSOP-2008---emission-5" title="WSOP 2008 - émission 5">WSOP 2008 - émission 5</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/3BP24df3oImG2pw2bLlr.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['3BP24df3oImG2pw2bLlr']=0; pic['3BP24df3oImG2pw2bLlr']=new Array(); pics['3BP24df3oImG2pw2bLlr']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-91-WSOP-2008---emission-5'> <img id='3BP24df3oImG2pw2bLlr' class=t width=180 height=130 src='uploads/thumbs/3BP24df3oImG2pw2bLlr.jpg'
+onmouseout='endm("3BP24df3oImG2pw2bLlr"); this.src="uploads/thumbs/3BP24df3oImG2pw2bLlr.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("3BP24df3oImG2pw2bLlr","uploads/thumbs/3BP24df3oImG2pw2bLlr.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:19:51</p>
+		<p class="vues">801 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-148-L-equipe-PokerStars-Pro---William-Thorson" title="L'équipe PokerStars Pro - William Thorson">L'équipe PokerStars Pro - William Thorso...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/LkYfCn41eio5pdUGvlDG.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['LkYfCn41eio5pdUGvlDG']=0; pic['LkYfCn41eio5pdUGvlDG']=new Array(); pics['LkYfCn41eio5pdUGvlDG']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-148-L-equipe-PokerStars-Pro---William-Thorson'> <img id='LkYfCn41eio5pdUGvlDG' class=t width=180 height=130 src='uploads/thumbs/LkYfCn41eio5pdUGvlDG.jpg'
+onmouseout='endm("LkYfCn41eio5pdUGvlDG"); this.src="uploads/thumbs/LkYfCn41eio5pdUGvlDG.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("LkYfCn41eio5pdUGvlDG","uploads/thumbs/LkYfCn41eio5pdUGvlDG.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:02:43</p>
+		<p class="vues">672 vues, 0.00
+                      / 5 </p>
+		<p class="vote">29-04-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-75-Sequence-detente-sur-le-Lake-Mead" title="Séquence détente sur le Lake Mead">Séquence détente sur le Lake Mead</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/UUEfW5eTPyWaHFgePjWJ.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['UUEfW5eTPyWaHFgePjWJ']=0; pic['UUEfW5eTPyWaHFgePjWJ']=new Array(); pics['UUEfW5eTPyWaHFgePjWJ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-75-Sequence-detente-sur-le-Lake-Mead'> <img id='UUEfW5eTPyWaHFgePjWJ' class=t width=180 height=130 src='uploads/thumbs/UUEfW5eTPyWaHFgePjWJ.jpg'
+onmouseout='endm("UUEfW5eTPyWaHFgePjWJ"); this.src="uploads/thumbs/UUEfW5eTPyWaHFgePjWJ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("UUEfW5eTPyWaHFgePjWJ","uploads/thumbs/UUEfW5eTPyWaHFgePjWJ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:05:26</p>
+		<p class="vues">685 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-86-WSOP-2008---emission-1" title="WSOP 2008 - émission 1">WSOP 2008 - émission 1</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/DAaHwghimh1QdFWDnlZW.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['DAaHwghimh1QdFWDnlZW']=0; pic['DAaHwghimh1QdFWDnlZW']=new Array(); pics['DAaHwghimh1QdFWDnlZW']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-86-WSOP-2008---emission-1'> <img id='DAaHwghimh1QdFWDnlZW' class=t width=180 height=130 src='uploads/thumbs/DAaHwghimh1QdFWDnlZW.jpg'
+onmouseout='endm("DAaHwghimh1QdFWDnlZW"); this.src="uploads/thumbs/DAaHwghimh1QdFWDnlZW.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("DAaHwghimh1QdFWDnlZW","uploads/thumbs/DAaHwghimh1QdFWDnlZW.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:19:41</p>
+		<p class="vues">1133 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-121-Daniel-Negreanu-aux-WSOP" title="Daniel Negreanu aux WSOP">Daniel Negreanu aux WSOP</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/ZsjdPKEOGe3jFV4exXOF.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['ZsjdPKEOGe3jFV4exXOF']=0; pic['ZsjdPKEOGe3jFV4exXOF']=new Array(); pics['ZsjdPKEOGe3jFV4exXOF']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-121-Daniel-Negreanu-aux-WSOP'> <img id='ZsjdPKEOGe3jFV4exXOF' class=t width=180 height=130 src='uploads/thumbs/ZsjdPKEOGe3jFV4exXOF.jpg'
+onmouseout='endm("ZsjdPKEOGe3jFV4exXOF"); this.src="uploads/thumbs/ZsjdPKEOGe3jFV4exXOF.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("ZsjdPKEOGe3jFV4exXOF","uploads/thumbs/ZsjdPKEOGe3jFV4exXOF.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:09:50</p>
+		<p class="vues">796 vues, 0.00
+                      / 5 </p>
+		<p class="vote">09-03-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-93-WSOP-2008---emission-7" title="WSOP 2008 - émission 7">WSOP 2008 - émission 7</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/1MjPvSZRMl43pAJ4kYqp.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['1MjPvSZRMl43pAJ4kYqp']=0; pic['1MjPvSZRMl43pAJ4kYqp']=new Array(); pics['1MjPvSZRMl43pAJ4kYqp']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-93-WSOP-2008---emission-7'> <img id='1MjPvSZRMl43pAJ4kYqp' class=t width=180 height=130 src='uploads/thumbs/1MjPvSZRMl43pAJ4kYqp.jpg'
+onmouseout='endm("1MjPvSZRMl43pAJ4kYqp"); this.src="uploads/thumbs/1MjPvSZRMl43pAJ4kYqp.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("1MjPvSZRMl43pAJ4kYqp","uploads/thumbs/1MjPvSZRMl43pAJ4kYqp.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:22:16</p>
+		<p class="vues">770 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-20-Poker-WSOP-2007" title="Poker WSOP 2007">Poker WSOP 2007</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/B1apXeLuvsIaTiKuS45O.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['B1apXeLuvsIaTiKuS45O']=0; pic['B1apXeLuvsIaTiKuS45O']=new Array(); pics['B1apXeLuvsIaTiKuS45O']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-20-Poker-WSOP-2007'> <img id='B1apXeLuvsIaTiKuS45O' class=t width=180 height=130 src='uploads/thumbs/B1apXeLuvsIaTiKuS45O.jpg'
+onmouseout='endm("B1apXeLuvsIaTiKuS45O"); this.src="uploads/thumbs/B1apXeLuvsIaTiKuS45O.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("B1apXeLuvsIaTiKuS45O","uploads/thumbs/B1apXeLuvsIaTiKuS45O.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:01:32</p>
+		<p class="vues">1168 vues, 0.00
+                      / 5 </p>
+		<p class="vote">11-03-08</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-87-WSOP-2008---emission-2" title="WSOP 2008 - émission 2">WSOP 2008 - émission 2</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/JLVwYawmlj2aaKa4NlLE.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['JLVwYawmlj2aaKa4NlLE']=0; pic['JLVwYawmlj2aaKa4NlLE']=new Array(); pics['JLVwYawmlj2aaKa4NlLE']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-87-WSOP-2008---emission-2'> <img id='JLVwYawmlj2aaKa4NlLE' class=t width=180 height=130 src='uploads/thumbs/JLVwYawmlj2aaKa4NlLE.jpg'
+onmouseout='endm("JLVwYawmlj2aaKa4NlLE"); this.src="uploads/thumbs/JLVwYawmlj2aaKa4NlLE.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("JLVwYawmlj2aaKa4NlLE","uploads/thumbs/JLVwYawmlj2aaKa4NlLE.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:21:19</p>
+		<p class="vues">1102 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-40-Les-jetons" title="Les jetons">Les jetons</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/HJhMG2blwNZ3sCoxzpVH.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['HJhMG2blwNZ3sCoxzpVH']=0; pic['HJhMG2blwNZ3sCoxzpVH']=new Array(); pics['HJhMG2blwNZ3sCoxzpVH']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-40-Les-jetons'> <img id='HJhMG2blwNZ3sCoxzpVH' class=t width=180 height=130 src='uploads/thumbs/HJhMG2blwNZ3sCoxzpVH.jpg'
+onmouseout='endm("HJhMG2blwNZ3sCoxzpVH"); this.src="uploads/thumbs/HJhMG2blwNZ3sCoxzpVH.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("HJhMG2blwNZ3sCoxzpVH","uploads/thumbs/HJhMG2blwNZ3sCoxzpVH.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:01:46</p>
+		<p class="vues">1274 vues, 0.00
+                      / 5 </p>
+		<p class="vote">08-04-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-191-WPT-World-Championship-2009---Part-7" title="WPT World Championship 2009 - Part 7">WPT World Championship 2009 - Part 7</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/ql0SzykET2UT3CsIRbJW.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['ql0SzykET2UT3CsIRbJW']=0; pic['ql0SzykET2UT3CsIRbJW']=new Array(); pics['ql0SzykET2UT3CsIRbJW']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-191-WPT-World-Championship-2009---Part-7'> <img id='ql0SzykET2UT3CsIRbJW' class=t width=180 height=130 src='uploads/thumbs/ql0SzykET2UT3CsIRbJW.jpg'
+onmouseout='endm("ql0SzykET2UT3CsIRbJW"); this.src="uploads/thumbs/ql0SzykET2UT3CsIRbJW.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("ql0SzykET2UT3CsIRbJW","uploads/thumbs/ql0SzykET2UT3CsIRbJW.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:11:03</p>
+		<p class="vues">308 vues, 0.00
+                      / 5 </p>
+		<p class="vote">22-07-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-222-Champions-Invitational-WSOP-2009---Part-6" title="Champions Invitational WSOP 2009 - Part 6">Champions Invitational WSOP 2009 - Part ...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/gKttnofl2dMuaArNxYYZ.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['gKttnofl2dMuaArNxYYZ']=0; pic['gKttnofl2dMuaArNxYYZ']=new Array(); pics['gKttnofl2dMuaArNxYYZ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-222-Champions-Invitational-WSOP-2009---Part-6'> <img id='gKttnofl2dMuaArNxYYZ' class=t width=180 height=130 src='uploads/thumbs/gKttnofl2dMuaArNxYYZ.jpg'
+onmouseout='endm("gKttnofl2dMuaArNxYYZ"); this.src="uploads/thumbs/gKttnofl2dMuaArNxYYZ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("gKttnofl2dMuaArNxYYZ","uploads/thumbs/gKttnofl2dMuaArNxYYZ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:33</p>
+		<p class="vues">628 vues, 0.00
+                      / 5 </p>
+		<p class="vote">13-08-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-223-Champions-Invitational-WSOP-2009---Part-7" title="Champions Invitational WSOP 2009 - Part 7">Champions Invitational WSOP 2009 - Part ...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/ozD10UNEIHozCIPDOPGm.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['ozD10UNEIHozCIPDOPGm']=0; pic['ozD10UNEIHozCIPDOPGm']=new Array(); pics['ozD10UNEIHozCIPDOPGm']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-223-Champions-Invitational-WSOP-2009---Part-7'> <img id='ozD10UNEIHozCIPDOPGm' class=t width=180 height=130 src='uploads/thumbs/ozD10UNEIHozCIPDOPGm.jpg'
+onmouseout='endm("ozD10UNEIHozCIPDOPGm"); this.src="uploads/thumbs/ozD10UNEIHozCIPDOPGm.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("ozD10UNEIHozCIPDOPGm","uploads/thumbs/ozD10UNEIHozCIPDOPGm.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:07:34</p>
+		<p class="vues">701 vues, 0.00
+                      / 5 </p>
+		<p class="vote">13-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-41-Magie-avec-des-jetons" title="Magie avec des jetons">Magie avec des jetons</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/QsrxjRteJPTLmvkT2trQ.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['QsrxjRteJPTLmvkT2trQ']=0; pic['QsrxjRteJPTLmvkT2trQ']=new Array(); pics['QsrxjRteJPTLmvkT2trQ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-41-Magie-avec-des-jetons'> <img id='QsrxjRteJPTLmvkT2trQ' class=t width=180 height=130 src='uploads/thumbs/QsrxjRteJPTLmvkT2trQ.jpg'
+onmouseout='endm("QsrxjRteJPTLmvkT2trQ"); this.src="uploads/thumbs/QsrxjRteJPTLmvkT2trQ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("QsrxjRteJPTLmvkT2trQ","uploads/thumbs/QsrxjRteJPTLmvkT2trQ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:03:16</p>
+		<p class="vues">1483 vues, 0.00
+                      / 5 </p>
+		<p class="vote">08-04-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-38-Le-plus-grand-jackpot-de-poker" title="Le plus grand jackpot de poker">Le plus grand jackpot de poker</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/a31Puti2lmSmYsojjM2U.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['a31Puti2lmSmYsojjM2U']=0; pic['a31Puti2lmSmYsojjM2U']=new Array(); pics['a31Puti2lmSmYsojjM2U']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-38-Le-plus-grand-jackpot-de-poker'> <img id='a31Puti2lmSmYsojjM2U' class=t width=180 height=130 src='uploads/thumbs/a31Puti2lmSmYsojjM2U.jpg'
+onmouseout='endm("a31Puti2lmSmYsojjM2U"); this.src="uploads/thumbs/a31Puti2lmSmYsojjM2U.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("a31Puti2lmSmYsojjM2U","uploads/thumbs/a31Puti2lmSmYsojjM2U.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:05:24</p>
+		<p class="vues">1420 vues, 0.00
+                      / 5 </p>
+		<p class="vote">08-04-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-84-Les-maitres-du-jeu" title="Les maîtres du jeu">Les maîtres du jeu</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/M5VqwQwZIDxSwlIltSgH.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['M5VqwQwZIDxSwlIltSgH']=0; pic['M5VqwQwZIDxSwlIltSgH']=new Array(); pics['M5VqwQwZIDxSwlIltSgH']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-84-Les-maitres-du-jeu'> <img id='M5VqwQwZIDxSwlIltSgH' class=t width=180 height=130 src='uploads/thumbs/M5VqwQwZIDxSwlIltSgH.jpg'
+onmouseout='endm("M5VqwQwZIDxSwlIltSgH"); this.src="uploads/thumbs/M5VqwQwZIDxSwlIltSgH.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("M5VqwQwZIDxSwlIltSgH","uploads/thumbs/M5VqwQwZIDxSwlIltSgH.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:10:12</p>
+		<p class="vues">668 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-66-Fabrice-Soulier-avant-sa-finale-des-WSOP-2007" title="Fabrice Soulier avant sa finale des WSOP 2007">Fabrice Soulier avant sa finale des WSOP...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/lj3hLzxt33XFxZFnhmeY.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['lj3hLzxt33XFxZFnhmeY']=0; pic['lj3hLzxt33XFxZFnhmeY']=new Array(); pics['lj3hLzxt33XFxZFnhmeY']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-66-Fabrice-Soulier-avant-sa-finale-des-WSOP-2007'> <img id='lj3hLzxt33XFxZFnhmeY' class=t width=180 height=130 src='uploads/thumbs/lj3hLzxt33XFxZFnhmeY.jpg'
+onmouseout='endm("lj3hLzxt33XFxZFnhmeY"); this.src="uploads/thumbs/lj3hLzxt33XFxZFnhmeY.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("lj3hLzxt33XFxZFnhmeY","uploads/thumbs/lj3hLzxt33XFxZFnhmeY.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:02:59</p>
+		<p class="vues">950 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-192-WPT-World-Championship-2009---Part-8" title="WPT World Championship 2009 - Part 8">WPT World Championship 2009 - Part 8</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/dKLa3DMkcVwx3TGsTrOR.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['dKLa3DMkcVwx3TGsTrOR']=0; pic['dKLa3DMkcVwx3TGsTrOR']=new Array(); pics['dKLa3DMkcVwx3TGsTrOR']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-192-WPT-World-Championship-2009---Part-8'> <img id='dKLa3DMkcVwx3TGsTrOR' class=t width=180 height=130 src='uploads/thumbs/dKLa3DMkcVwx3TGsTrOR.jpg'
+onmouseout='endm("dKLa3DMkcVwx3TGsTrOR"); this.src="uploads/thumbs/dKLa3DMkcVwx3TGsTrOR.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("dKLa3DMkcVwx3TGsTrOR","uploads/thumbs/dKLa3DMkcVwx3TGsTrOR.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:11:03</p>
+		<p class="vues">431 vues, 0.00
+                      / 5 </p>
+		<p class="vote">22-07-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-3-Le-poker-explique-aux-debutants" title="Le poker expliqué aux débutants">Le poker expliqué aux débutants</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/VAzgQw44atCBtn0MIzdh.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['VAzgQw44atCBtn0MIzdh']=0; pic['VAzgQw44atCBtn0MIzdh']=new Array(); pics['VAzgQw44atCBtn0MIzdh']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-3-Le-poker-explique-aux-debutants'> <img id='VAzgQw44atCBtn0MIzdh' class=t width=180 height=130 src='uploads/thumbs/VAzgQw44atCBtn0MIzdh.jpg'
+onmouseout='endm("VAzgQw44atCBtn0MIzdh"); this.src="uploads/thumbs/VAzgQw44atCBtn0MIzdh.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("VAzgQw44atCBtn0MIzdh","uploads/thumbs/VAzgQw44atCBtn0MIzdh.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:05:50</p>
+		<p class="vues">1306 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-10-Appendre-a-tricher-au-Poker" title="Appendre à tricher au Poker">Appendre à tricher au Poker</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/hV25dKkRhhezCkQQPd2X.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['hV25dKkRhhezCkQQPd2X']=0; pic['hV25dKkRhhezCkQQPd2X']=new Array(); pics['hV25dKkRhhezCkQQPd2X']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-10-Appendre-a-tricher-au-Poker'> <img id='hV25dKkRhhezCkQQPd2X' class=t width=180 height=130 src='uploads/thumbs/hV25dKkRhhezCkQQPd2X.jpg'
+onmouseout='endm("hV25dKkRhhezCkQQPd2X"); this.src="uploads/thumbs/hV25dKkRhhezCkQQPd2X.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("hV25dKkRhhezCkQQPd2X","uploads/thumbs/hV25dKkRhhezCkQQPd2X.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:04:34</p>
+		<p class="vues">819 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-03-08</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-90-WSOP-2008---emission-4" title="WSOP 2008 - émission 4">WSOP 2008 - émission 4</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/oHMgwLfpyLdO5fPjcEA4.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['oHMgwLfpyLdO5fPjcEA4']=0; pic['oHMgwLfpyLdO5fPjcEA4']=new Array(); pics['oHMgwLfpyLdO5fPjcEA4']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-90-WSOP-2008---emission-4'> <img id='oHMgwLfpyLdO5fPjcEA4' class=t width=180 height=130 src='uploads/thumbs/oHMgwLfpyLdO5fPjcEA4.jpg'
+onmouseout='endm("oHMgwLfpyLdO5fPjcEA4"); this.src="uploads/thumbs/oHMgwLfpyLdO5fPjcEA4.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("oHMgwLfpyLdO5fPjcEA4","uploads/thumbs/oHMgwLfpyLdO5fPjcEA4.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:02:49</p>
+		<p class="vues">851 vues, 0.00
+                      / 5 </p>
+		<p class="vote">04-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-8-Derniere-main-au-WSOP-1973" title="Dernière main au WSOP 1973">Dernière main au WSOP 1973</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/Yd4YBcxxTWoIHUhHKwoC.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['Yd4YBcxxTWoIHUhHKwoC']=0; pic['Yd4YBcxxTWoIHUhHKwoC']=new Array(); pics['Yd4YBcxxTWoIHUhHKwoC']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-8-Derniere-main-au-WSOP-1973'> <img id='Yd4YBcxxTWoIHUhHKwoC' class=t width=180 height=130 src='uploads/thumbs/Yd4YBcxxTWoIHUhHKwoC.jpg'
+onmouseout='endm("Yd4YBcxxTWoIHUhHKwoC"); this.src="uploads/thumbs/Yd4YBcxxTWoIHUhHKwoC.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("Yd4YBcxxTWoIHUhHKwoC","uploads/thumbs/Yd4YBcxxTWoIHUhHKwoC.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:02:11</p>
+		<p class="vues">1166 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-82-Bertrand--Elky--Grospellier" title="Bertrand &quot;Elky&quot; Grospellier">Bertrand &quot;Elky&quot; Grospellier</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/VZfiNsTNScQtxuwlbvhl.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['VZfiNsTNScQtxuwlbvhl']=0; pic['VZfiNsTNScQtxuwlbvhl']=new Array(); pics['VZfiNsTNScQtxuwlbvhl']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-82-Bertrand--Elky--Grospellier'> <img id='VZfiNsTNScQtxuwlbvhl' class=t width=180 height=130 src='uploads/thumbs/VZfiNsTNScQtxuwlbvhl.jpg'
+onmouseout='endm("VZfiNsTNScQtxuwlbvhl"); this.src="uploads/thumbs/VZfiNsTNScQtxuwlbvhl.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("VZfiNsTNScQtxuwlbvhl","uploads/thumbs/VZfiNsTNScQtxuwlbvhl.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:05:50</p>
+		<p class="vues">1124 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-34-Poker-WSOP-2006-finale-main-event-1-4" title="Poker WSOP 2006 finale main event 1-4">Poker WSOP 2006 finale main event 1-4</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/VHWpuSraTgSmJYgLBVyr.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['VHWpuSraTgSmJYgLBVyr']=0; pic['VHWpuSraTgSmJYgLBVyr']=new Array(); pics['VHWpuSraTgSmJYgLBVyr']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-34-Poker-WSOP-2006-finale-main-event-1-4'> <img id='VHWpuSraTgSmJYgLBVyr' class=t width=180 height=130 src='uploads/thumbs/VHWpuSraTgSmJYgLBVyr.jpg'
+onmouseout='endm("VHWpuSraTgSmJYgLBVyr"); this.src="uploads/thumbs/VHWpuSraTgSmJYgLBVyr.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("VHWpuSraTgSmJYgLBVyr","uploads/thumbs/VHWpuSraTgSmJYgLBVyr.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:13:30</p>
+		<p class="vues">1348 vues, 5.00
+                      / 5 </p>
+		<p class="vote">07-04-08</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-19-Poker-WSOP-2006-finale-main-event-3-4" title="Poker WSOP 2006 finale main event 3-4">Poker WSOP 2006 finale main event 3-4</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/BYGHFNvYdtl3sPLYISuA.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['BYGHFNvYdtl3sPLYISuA']=0; pic['BYGHFNvYdtl3sPLYISuA']=new Array(); pics['BYGHFNvYdtl3sPLYISuA']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-19-Poker-WSOP-2006-finale-main-event-3-4'> <img id='BYGHFNvYdtl3sPLYISuA' class=t width=180 height=130 src='uploads/thumbs/BYGHFNvYdtl3sPLYISuA.jpg'
+onmouseout='endm("BYGHFNvYdtl3sPLYISuA"); this.src="uploads/thumbs/BYGHFNvYdtl3sPLYISuA.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("BYGHFNvYdtl3sPLYISuA","uploads/thumbs/BYGHFNvYdtl3sPLYISuA.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:13:35</p>
+		<p class="vues">1127 vues, 0.00
+                      / 5 </p>
+		<p class="vote">08-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-32-Poker-WSOP-2006-finale-main-event-2-4" title="Poker WSOP 2006 finale main event 2-4">Poker WSOP 2006 finale main event 2-4</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/WdowbSAAlWGA1qrelQWS.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['WdowbSAAlWGA1qrelQWS']=0; pic['WdowbSAAlWGA1qrelQWS']=new Array(); pics['WdowbSAAlWGA1qrelQWS']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-32-Poker-WSOP-2006-finale-main-event-2-4'> <img id='WdowbSAAlWGA1qrelQWS' class=t width=180 height=130 src='uploads/thumbs/WdowbSAAlWGA1qrelQWS.jpg'
+onmouseout='endm("WdowbSAAlWGA1qrelQWS"); this.src="uploads/thumbs/WdowbSAAlWGA1qrelQWS.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("WdowbSAAlWGA1qrelQWS","uploads/thumbs/WdowbSAAlWGA1qrelQWS.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:13:32</p>
+		<p class="vues">1089 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-04-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-33-Poker-WSOP-2006-finale-main-event-4-4" title="Poker WSOP 2006 finale main event 4-4">Poker WSOP 2006 finale main event 4-4</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/nFY5TvrNZkJw43NYJNR1.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['nFY5TvrNZkJw43NYJNR1']=0; pic['nFY5TvrNZkJw43NYJNR1']=new Array(); pics['nFY5TvrNZkJw43NYJNR1']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-33-Poker-WSOP-2006-finale-main-event-4-4'> <img id='nFY5TvrNZkJw43NYJNR1' class=t width=180 height=130 src='uploads/thumbs/nFY5TvrNZkJw43NYJNR1.jpg'
+onmouseout='endm("nFY5TvrNZkJw43NYJNR1"); this.src="uploads/thumbs/nFY5TvrNZkJw43NYJNR1.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("nFY5TvrNZkJw43NYJNR1","uploads/thumbs/nFY5TvrNZkJw43NYJNR1.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:13:49</p>
+		<p class="vues">1310 vues, 4.00
+                      / 5 </p>
+		<p class="vote">07-04-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-125-WSOP-Europe---Part-2---Championnat-No-Limit-Texas-Hold-em" title="WSOP Europe - Part 2 - Championnat No Limit Texas Hold'em">WSOP Europe - Part 2 - Championnat No Li...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/xVzHxfcbLSXTlBJpxAVH.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['xVzHxfcbLSXTlBJpxAVH']=0; pic['xVzHxfcbLSXTlBJpxAVH']=new Array(); pics['xVzHxfcbLSXTlBJpxAVH']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-125-WSOP-Europe---Part-2---Championnat-No-Limit-Texas-Hold-em'> <img id='xVzHxfcbLSXTlBJpxAVH' class=t width=180 height=130 src='uploads/thumbs/xVzHxfcbLSXTlBJpxAVH.jpg'
+onmouseout='endm("xVzHxfcbLSXTlBJpxAVH"); this.src="uploads/thumbs/xVzHxfcbLSXTlBJpxAVH.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("xVzHxfcbLSXTlBJpxAVH","uploads/thumbs/xVzHxfcbLSXTlBJpxAVH.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:10:00</p>
+		<p class="vues">487 vues, 0.00
+                      / 5 </p>
+		<p class="vote">09-03-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-119-Poker-After-Dark-3eme-partie" title="Poker After Dark 3ème partie">Poker After Dark 3ème partie</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/lwo4Dix4JGrTrnKogaPP.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['lwo4Dix4JGrTrnKogaPP']=0; pic['lwo4Dix4JGrTrnKogaPP']=new Array(); pics['lwo4Dix4JGrTrnKogaPP']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-119-Poker-After-Dark-3eme-partie'> <img id='lwo4Dix4JGrTrnKogaPP' class=t width=180 height=130 src='uploads/thumbs/lwo4Dix4JGrTrnKogaPP.jpg'
+onmouseout='endm("lwo4Dix4JGrTrnKogaPP"); this.src="uploads/thumbs/lwo4Dix4JGrTrnKogaPP.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("lwo4Dix4JGrTrnKogaPP","uploads/thumbs/lwo4Dix4JGrTrnKogaPP.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:13:26</p>
+		<p class="vues">849 vues, 0.00
+                      / 5 </p>
+		<p class="vote">17-02-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-101-FPT-Strasbourg-2008" title="FPT Strasbourg 2008">FPT Strasbourg 2008</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/XfFlT1r3L3VVFGKVRwbM.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['XfFlT1r3L3VVFGKVRwbM']=0; pic['XfFlT1r3L3VVFGKVRwbM']=new Array(); pics['XfFlT1r3L3VVFGKVRwbM']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-101-FPT-Strasbourg-2008'> <img id='XfFlT1r3L3VVFGKVRwbM' class=t width=180 height=130 src='uploads/thumbs/XfFlT1r3L3VVFGKVRwbM.jpg'
+onmouseout='endm("XfFlT1r3L3VVFGKVRwbM"); this.src="uploads/thumbs/XfFlT1r3L3VVFGKVRwbM.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("XfFlT1r3L3VVFGKVRwbM","uploads/thumbs/XfFlT1r3L3VVFGKVRwbM.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:02:45</p>
+		<p class="vues">967 vues, 0.00
+                      / 5 </p>
+		<p class="vote">05-12-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-217-Champions-Invitational-WSOP-2009---Part-1" title="Champions Invitational WSOP 2009 - Part 1">Champions Invitational WSOP 2009 - Part ...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/GZBUvpqyO3WhTeNGFxdo.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['GZBUvpqyO3WhTeNGFxdo']=0; pic['GZBUvpqyO3WhTeNGFxdo']=new Array(); pics['GZBUvpqyO3WhTeNGFxdo']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-217-Champions-Invitational-WSOP-2009---Part-1'> <img id='GZBUvpqyO3WhTeNGFxdo' class=t width=180 height=130 src='uploads/thumbs/GZBUvpqyO3WhTeNGFxdo.jpg'
+onmouseout='endm("GZBUvpqyO3WhTeNGFxdo"); this.src="uploads/thumbs/GZBUvpqyO3WhTeNGFxdo.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("GZBUvpqyO3WhTeNGFxdo","uploads/thumbs/GZBUvpqyO3WhTeNGFxdo.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:33</p>
+		<p class="vues">641 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-08-09</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-164-Table-finale-Aussie-Millions-2009---Part-3" title="Table finale Aussie Millions 2009 - Part 3">Table finale Aussie Millions 2009 - Part...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/paH4FtM5ediyQrYDpSJv.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['paH4FtM5ediyQrYDpSJv']=0; pic['paH4FtM5ediyQrYDpSJv']=new Array(); pics['paH4FtM5ediyQrYDpSJv']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-164-Table-finale-Aussie-Millions-2009---Part-3'> <img id='paH4FtM5ediyQrYDpSJv' class=t width=180 height=130 src='uploads/thumbs/paH4FtM5ediyQrYDpSJv.jpg'
+onmouseout='endm("paH4FtM5ediyQrYDpSJv"); this.src="uploads/thumbs/paH4FtM5ediyQrYDpSJv.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("paH4FtM5ediyQrYDpSJv","uploads/thumbs/paH4FtM5ediyQrYDpSJv.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:08:46</p>
+		<p class="vues">554 vues, 0.00
+                      / 5 </p>
+		<p class="vote">14-05-09</p>
+  </li>
+</ul><ul class="vidcol clearfix"> 
+	<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-6-Melange-de-jetons-chips-shuffle" title="Mélange de jetons (chips shuffle)">Mélange de jetons (chips shuffle)</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/m2yatV5kh4KzC3W4S0nQ.jpg)" >
+                                                <div style="margin-left:-2px; margin-top:-2px" >
+                                                  <script type='text/javascript'>
+stat['m2yatV5kh4KzC3W4S0nQ']=0; pic['m2yatV5kh4KzC3W4S0nQ']=new Array(); pics['m2yatV5kh4KzC3W4S0nQ']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+                                                <a  href='http://www.poker5.tv/video-6-Melange-de-jetons-chips-shuffle'> <img id='m2yatV5kh4KzC3W4S0nQ' class=t width=180 height=130 src='uploads/thumbs/m2yatV5kh4KzC3W4S0nQ.jpg'
+onmouseout='endm("m2yatV5kh4KzC3W4S0nQ"); this.src="uploads/thumbs/m2yatV5kh4KzC3W4S0nQ.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("m2yatV5kh4KzC3W4S0nQ","uploads/thumbs/m2yatV5kh4KzC3W4S0nQ.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+      </div></a>
+		
+		<p class="duree">00:00:18</p>
+		<p class="vues">906 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-03-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-64-Poker-WSOP-2007" title="Poker WSOP 2007">Poker WSOP 2007</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/cZzGRWcOF0ZEAjkpZg2E.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['cZzGRWcOF0ZEAjkpZg2E']=0; pic['cZzGRWcOF0ZEAjkpZg2E']=new Array(); pics['cZzGRWcOF0ZEAjkpZg2E']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-64-Poker-WSOP-2007'> <img id='cZzGRWcOF0ZEAjkpZg2E' class=t width=180 height=130 src='uploads/thumbs/cZzGRWcOF0ZEAjkpZg2E.jpg'
+onmouseout='endm("cZzGRWcOF0ZEAjkpZg2E"); this.src="uploads/thumbs/cZzGRWcOF0ZEAjkpZg2E.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("cZzGRWcOF0ZEAjkpZg2E","uploads/thumbs/cZzGRWcOF0ZEAjkpZg2E.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:03:25</p>
+		<p class="vues">1066 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-78-Tournoi-Barriere-de-Deauville" title="Tournoi Barrière de Deauville">Tournoi Barrière de Deauville</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/N4HFsdMkqweKhdgLFkMP.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['N4HFsdMkqweKhdgLFkMP']=0; pic['N4HFsdMkqweKhdgLFkMP']=new Array(); pics['N4HFsdMkqweKhdgLFkMP']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-78-Tournoi-Barriere-de-Deauville'> <img id='N4HFsdMkqweKhdgLFkMP' class=t width=180 height=130 src='uploads/thumbs/N4HFsdMkqweKhdgLFkMP.jpg'
+onmouseout='endm("N4HFsdMkqweKhdgLFkMP"); this.src="uploads/thumbs/N4HFsdMkqweKhdgLFkMP.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("N4HFsdMkqweKhdgLFkMP","uploads/thumbs/N4HFsdMkqweKhdgLFkMP.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:04:42</p>
+		<p class="vues">1016 vues, 0.00
+                      / 5 </p>
+		<p class="vote">07-10-08</p>
+  </li>
+		<li>
+	<p class="titre"><a href="http://www.poker5.tv/video-221-Champions-Invitational-WSOP-2009---Part-5" title="Champions Invitational WSOP 2009 - Part 5">Champions Invitational WSOP 2009 - Part ...</a></p>
+    <div onMouseOver="this.style.border='solid 2px #00a451'" onMouseOut="this.style.border='solid 2px #999999'" style="height:130px;width:165px;overflow:hidden; border:solid 2px; border-color: #999999; background-image: url(uploads/thumbs/2TPsDjIrOLBBqfxqGkY4.jpg)" >
+      <div style="margin-left:-2px; margin-top:-2px" >
+        <script type='text/javascript'>
+stat['2TPsDjIrOLBBqfxqGkY4']=0; pic['2TPsDjIrOLBBqfxqGkY4']=new Array(); pics['2TPsDjIrOLBBqfxqGkY4']=new
+Array(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);</script>
+      <a  href='http://www.poker5.tv/video-221-Champions-Invitational-WSOP-2009---Part-5'> <img id='2TPsDjIrOLBBqfxqGkY4' class=t width=180 height=130 src='uploads/thumbs/2TPsDjIrOLBBqfxqGkY4.jpg'
+onmouseout='endm("2TPsDjIrOLBBqfxqGkY4"); this.src="uploads/thumbs/2TPsDjIrOLBBqfxqGkY4.jpg"; this.style.border="solid 2px #A0A0A0";'
+onmouseover='startm("2TPsDjIrOLBBqfxqGkY4","uploads/thumbs/2TPsDjIrOLBBqfxqGkY4.jpg._",".jpg"); this.style.border="solid 2px #CC0D12";'></a> </div>
+    </div>
+    </a>
+		
+		<p class="duree">00:07:34</p>
+		<p class="vues">599 vues, 0.00
+                      / 5 </p>
+		<p class="vote">13-08-09</p>
+  </li>
+</ul>
+
+
+<br>
+<hr>
+
+
+
+  
+    <div class="bas">
+<p class="bas">support[at]poker5.tv - <strong>copyright 2007 poker5.tv</strong> - <a href="rss.php"><img src="../images/feed-icon-14x14.png" width="14" height="14" border="0" align="absbottom"><br>
+  <a href="http://www.poker5.tv/last_com.php">commentaires</a> | <a href="http://www.poker5.tv/videos_poker.php">liste des  vid&eacute;os</a>  | <a href="http://www.poker5.tv/tags.php">tags</a> | <a href="http://www.poker5.tv/stats.php">stats</a> <a href="http://www.xiti.com/xiti.asp?s=360442" title="WebAnalytics">
+<script type="text/javascript">
+<!--
+Xt_param = 's=360442&p=';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="80" height="15" border="0" alt="" ';
+Xt_i += 'src="http://logv3.xiti.com/g.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+<noscript>
+Mesure d'audience ROI statistique webanalytics par <img width="80" height="15" src="http://logv3.xiti.com/g.xiti?s=360442&p=" alt="WebAnalytics" />
+</noscript></a>
+</p>
+  </div>
+</div>
+
+
+<div id="Layer2">
+<iframe align="center" name="nl" scrolling="no" marginwidth="0" marginheight="0" height="600" width="120" border="0" frameborder="0" src="http://www.poker5.tv/pub120600.php" style="border:0px;"></iframe>
+<br>
+<span class="intro">Poker5.tv vous recommande les sites suivants:<br>
+<a href="http://www.mescasinos.org">casino</a><br>
+<a href="http://www.poker-fr.org">poker en ligne</a><br>
+<a href="http://www.casinos-hits.com">casino en ligne</a><br>
+<a href=http://www.pokerligne.org/ target="_blank">poker en ligne</a><br>
+<a href="http://www.jeux-de-casinos.com/free.php" >Casino gratuit</a><br>
+<a href="http://www.guide-poker.eu">Jouer au poker</a></span>
+
+</div>
+</body>
+
+</html><div style="margin-left:auto; margin-right:auto; width:200px; height:20px; border:#999999 1px solid; line-height:15px; text-align:center; padding-left:5px; padding-right:5px; margin-top:15px; visibility:visible; background-color:#FFFFFF; clear:both">
+<a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Powered by PHPmotion -</a> <a style="text-decoration:none; color:#6B8FDA; font-size:9px; font-family:Arial, Helvetica, sans-serif" href="http://www.phpmotion.com">Free Video Script</a></div>
